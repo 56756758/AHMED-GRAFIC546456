@@ -1188,33 +1188,400 @@ textarea.form-control {
   gap: 16px;
 }
 
-/* Responsiveness */
-@media (max-width: 900px) {
-  .hero-grid, .contact-grid, .calc-body-grid {
-    grid-template-columns: 1fr;
+/* =============================================
+   Responsiveness - Mobile First
+   ============================================= */
+
+/* --- Tablet (max 1024px) --- */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 18px;
   }
-  
+
   .hero-title {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
   }
-  
+
+  .pricing-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+
+/* --- Small Tablet / Large Mobile (max 900px) --- */
+@media (max-width: 900px) {
+  /* Nav */
   .nav-links {
     position: fixed;
-    top: 70px;
+    top: 0;
     right: -100%;
-    width: 100%;
-    height: calc(100vh - 70px);
-    background: var(--bg-primary);
+    width: 80%;
+    max-width: 320px;
+    height: 100vh;
+    background: var(--bg-secondary);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-left: 1px solid var(--border-glass);
     flex-direction: column;
-    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 80px 24px 40px;
+    z-index: 99;
     transition: right var(--transition-normal);
+    box-shadow: var(--shadow-lg);
   }
-  
+
+  [dir="ltr"] .nav-links {
+    right: auto;
+    left: -100%;
+    border-left: none;
+    border-right: 1px solid var(--border-glass);
+    transition: left var(--transition-normal);
+  }
+
+  [dir="ltr"] .nav-links.active {
+    left: 0;
+    right: auto;
+  }
+
   .nav-links.active {
     right: 0;
   }
-  
+
+  .nav-links a {
+    font-size: 1.1rem;
+  }
+
   .mobile-menu-btn {
     display: block;
+  }
+
+  /* Hero */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-badge {
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .hero-btns {
+    justify-content: center;
+  }
+
+  .hero-cta-text {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-visual {
+    order: -1;
+  }
+
+  .hero-card {
+    max-width: 100%;
+  }
+
+  /* About section image */
+  #about-img {
+    height: 320px !important;
+    max-width: 100% !important;
+  }
+
+  /* Contact */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* Calculator */
+  .calc-body-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* --- Mobile (max 600px) --- */
+@media (max-width: 600px) {
+  /* Global */
+  .container {
+    padding: 0 16px;
+  }
+
+  /* Nav */
+  .header-nav {
+    padding: 14px 0;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .nav-controls {
+    gap: 8px;
+  }
+
+  .nav-controls .btn-secondary {
+    display: none;
+  }
+
+  .theme-toggle-btn,
+  .lang-toggle-btn {
+    padding: 7px 10px;
+    font-size: 0.8rem;
+  }
+
+  /* Hero */
+  .hero-section {
+    padding: 110px 0 70px 0;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .hero-card {
+    padding: 20px 16px;
+    gap: 14px;
+  }
+
+  .hero-card-stats {
+    gap: 10px;
+  }
+
+  /* Sections */
+  .services-section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  /* Services grid */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .service-card {
+    padding: 24px 20px;
+  }
+
+  /* Portfolio */
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .portfolio-filters {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+
+  .portfolio-thumb-box {
+    height: 180px;
+  }
+
+  /* Before / After Slider */
+  .before-after-wrapper {
+    padding: 24px 16px;
+    margin-top: 40px;
+  }
+
+  .before-after-title {
+    font-size: 1.1rem;
+  }
+
+  .before-after-sub {
+    font-size: 0.85rem;
+  }
+
+  .ba-slider-container {
+    height: 200px;
+  }
+
+  /* Pricing */
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .pricing-card {
+    padding: 24px 20px;
+  }
+
+  .price-val {
+    font-size: 2rem;
+  }
+
+  .currency-toggle-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Calculator */
+  .calculator-card {
+    padding: 24px 16px;
+  }
+
+  .calc-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .calc-body-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* FAQ */
+  .faq-question {
+    font-size: 0.95rem;
+    padding: 16px 16px;
+  }
+
+  .faq-answer {
+    padding: 0 16px;
+  }
+
+  .faq-item.active .faq-answer {
+    padding: 0 16px 16px 16px;
+  }
+
+  /* Contact */
+  .contact-section {
+    padding: 70px 0;
+  }
+
+  .contact-form-card {
+    padding: 24px 16px;
+  }
+
+  .form-group-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  /* Modals */
+  .modal-card {
+    padding: 24px 16px;
+    max-width: 100%;
+    border-radius: var(--radius-md);
+    margin: 12px;
+    width: calc(100% - 24px);
+  }
+
+  .lightbox-card {
+    max-width: 100%;
+  }
+
+  .lightbox-img-box {
+    height: 180px;
+  }
+
+  /* WhatsApp float button */
+  .whatsapp-float-btn {
+    width: 52px;
+    height: 52px;
+    font-size: 26px;
+    bottom: 20px;
+    left: 16px;
+  }
+
+  [dir="ltr"] .whatsapp-float-btn {
+    right: 16px;
+    left: auto;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 28px 0;
+    font-size: 0.85rem;
+  }
+
+  /* About section image */
+  #about-img {
+    height: 260px !important;
+    max-width: 100% !important;
+  }
+
+  /* Hero visual order */
+  .hero-grid {
+    text-align: center;
+  }
+
+  /* Buttons responsive */
+  .btn {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero-btns .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+/* --- Very Small Mobile (max 380px) --- */
+@media (max-width: 380px) {
+  .hero-title {
+    font-size: 1.55rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .filter-btn {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
+
+  .pricing-card {
+    padding: 20px 14px;
   }
 }

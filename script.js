@@ -143,6 +143,19 @@ document.addEventListener('DOMContentLoaded', function () {
         spans[2].style.transform = 'none';
       });
     });
+
+    // Close menu when clicking outside (on overlay area)
+    document.addEventListener('click', function (e) {
+      var isOpen = navLinks.classList.contains('active');
+      if (isOpen && !navLinks.contains(e.target) && e.target !== mobileMenuBtn && !mobileMenuBtn.contains(e.target)) {
+        navLinks.classList.remove('active');
+        mobileMenuBtn.classList.remove('open');
+        var spans = mobileMenuBtn.querySelectorAll('span');
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
+      }
+    });
   }
 
   // 3. Scroll Reveal Animation (Intersection Observer)
