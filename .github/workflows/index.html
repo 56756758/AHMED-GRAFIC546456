@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AHMED DESIGN - خدمات تصميم الجرافيك الاحترافية | الرئيسية</title>
+  <meta name="description" content="AHMED DESIGN - معرض وخدمات تصميم الجرافيك الاحترافية من أحمد. تصميم صور مصغرة عالية المشاهدات CTR، شعارات لوجو، بنرات إعلانية، وتصاميم تجارية مخصصة.">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AHMED DESIGN - خدمات تصميم الجرافيك الاحترافية">
+  <meta property="og:description" content="تصميم صور مصغرة يوتيوب CTR عالية، شعارات، إعلانات، وتصاميم تجارية احترافية بأسعار مناسبة.">
+  <meta property="og:image" content="profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AHMED DESIGN - تصميم احترافي">
+  <meta name="twitter:image" content="profile.jpg">
+
+  <!-- Security Meta Tags -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: blob:; img-src 'self' data: https: blob:; style-src 'self' 'unsafe-inline' https:; font-src 'self' https: data:;">
+
+  <!-- FontAwesome CDN for premium icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Google Fonts for Arabic & English -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon with Circular Profile Image -->
+  <link rel="icon" type="image/jpeg" href="profile.jpg">
+
+  <!-- Local stylesheet link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ✨ Loading Screen -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="loading-inner">
+      <div class="loading-logo">
+        <img src="profile.jpg" alt="AHMED DESIGN" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 3px solid var(--color-primary); box-shadow: 0 0 20px rgba(99, 102, 241, 0.6);">
+      </div>
+      <div class="loading-ring"></div>
+      <p class="loading-text">AHMED DESIGN</p>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header-nav" id="header-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="nav-logo">
+        <img src="profile.jpg" alt="AHMED DESIGN" class="logo-avatar">
+        <span>AHMED DESIGN</span>
+      </a>
+      
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="القائمة">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+        <li><a href="services.html" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+        <li><a href="portfolio.html" data-ar="معرض الأعمال" data-en="Portfolio">معرض الأعمال</a></li>
+        <li><a href="pricing.html" data-ar="الأسعار" data-en="Pricing">الأسعار</a></li>
+        <li><a href="about.html" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+        <li><a href="contact.html" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+      </ul>
+      
+      <div class="nav-controls">
+        <!-- Social Media Buttons -->
+        <a href="https://www.instagram.com/ahme_idet_x" target="_blank" rel="noopener noreferrer" class="social-icon-btn instagram" title="الانستجرام - Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@narota28" target="_blank" rel="noopener noreferrer" class="social-icon-btn tiktok" title="التيك توك - TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button class="theme-toggle-btn" id="theme-toggle-btn" title="تغيير الوضع (ليلي / نهاري)">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <!-- Language Switcher -->
+        <button class="lang-toggle-btn" id="lang-toggle-btn" title="Switch Language">
+          <i class="fa-solid fa-globe"></i> <span id="lang-text">EN</span>
+        </button>
+
+        <!-- Quick Request Header Button -->
+        <button class="btn btn-secondary btn-sm" id="open-quick-modal-btn">
+          <i class="fa-solid fa-bolt"></i> <span data-ar="طلب سريع" data-en="Quick Order">طلب سريع</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-badge"><i class="fa-solid fa-shield-halved"></i> <span data-ar="آمن ومتاح لاستلام الطلبات الفورية" data-en="Secure & Open for Orders">آمن ومتاح لاستلام الطلبات الفورية</span></span>
+        <h1 class="hero-title">
+          <span data-ar="ارتقِ بعلامتك التجارية مع" data-en="Elevate Your Brand With">ارتقِ بعلامتك التجارية مع</span> 
+          <span class="gradient-text" data-ar="AHMED DESIGN" data-en="AHMED DESIGN">AHMED DESIGN</span>
+        </h1>
+        <p class="hero-description" data-ar="هل تحتاج إلى تصميم جذاب لفيلمك، قناتك أو مشروعك؟ يساعدك أحمد في إنشاء صور مصغرة عالية المشاهدات، شعارات فريدة، وإعلانات تجارية ذات تأثير بصري قوي يزيد مبيعاتك ونقراتك." data-en="Need an eye-catching design? Ahmed Design helps content creators, businesses, and brands stand out with high-CTR thumbnails, unique logos, and impactful ad visuals.">
+          هل تحتاج إلى تصميم جذاب لفيلمك، قناتك أو مشروعك؟ يساعدك أحمد في إنشاء صور مصغرة عالية المشاهدات، شعارات فريدة، وإعلانات تجارية ذات تأثير بصري قوي يزيد مبيعاتك ونقراتك.
+        </p>
+        <div class="hero-cta-wrapper">
+          <div class="hero-btns">
+            <a href="pricing.html" class="btn btn-primary" id="hero-primary-btn" data-ar="قائمة الأسعار" data-en="View Pricing">قائمة الأسعار</a>
+            <button class="btn btn-secondary" id="hero-quick-order-btn" data-ar="ابدأ طلبك الآن" data-en="Start Order">ابدأ طلبك الآن</button>
+          </div>
+          <div class="hero-cta-text" id="hero-info-text">
+            <i class="fa-solid fa-lock"></i>
+            <span data-ar="موقع مشفر ومحمي. متاح لتصميم الصور المصغرة، اللوجوهات، الإعلانات، والستوريات." data-en="Encrypted & Secure. Available for Thumbnails, Logos, Ads & Stories.">موقع مشفر ومحمي. متاح لتصميم الصور المصغرة، اللوجوهات، الإعلانات، والستوريات.</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="hero-circle-glow"></div>
+        <div class="glass-card hero-card" id="profile-card">
+          <div class="hero-card-header">
+            <div class="designer-profile">
+              <img src="profile.jpg" alt="Ahmed Design" class="designer-avatar" style="object-fit: cover;">
+              <div class="designer-name-title">
+                <h4>أحمد (AHMED DESIGN)</h4>
+                <p data-ar="مصمم جرافيك ومبتكر بصرى" data-en="Lead Graphic Specialist">مصمم جرافيك ومبتكر بصرى</p>
+              </div>
+            </div>
+            <div class="status-dot" title="متاح لاستلام الطلبات"></div>
+          </div>
+          <p class="designer-bio" style="font-size: 0.9rem; line-height: 1.5;" data-ar="متخصص في صناعة الهويات البصرية، الصور المصغرة عالية النقر (CTR)، والإعلانات المبتكرة التي تجذب انتباه الجمهور." data-en="Specialized in visual identities, high-CTR thumbnails, and creative ad visual assets.">
+            "متخصص في صناعة الهويات البصرية، الصور المصغرة عالية النقر (CTR)، والإعلانات المبتكرة التي تجذب انتباه الجمهور."
+          </p>
+          <div class="hero-card-stats">
+            <div class="stat-item">
+              <h5>100%</h5>
+              <p data-ar="ضمان الرضا والتعديل" data-en="Satisfaction Guaranteed">ضمان الرضا والتعديل</p>
+            </div>
+            <div class="stat-item">
+              <h5>24h</h5>
+              <p data-ar="تسليم فائق السرعة" data-en="Express Delivery">تسليم فائق السرعة</p>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block" style="width: 100%;" id="card-action-btn" data-ar="احجز طلبك الآن" data-en="Book a Direct Order">احجز طلبك الآن</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Homepage Services Preview Section -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle" data-ar="خدمات AHMED DESIGN" data-en="Our Services">خدمات AHMED DESIGN</span>
+        <h2 class="section-title" data-ar="خدمات التصميم الاحترافية" data-en="Professional Design Services">خدمات التصميم الاحترافية</h2>
+        <p class="section-desc" data-ar="اختر من بين خدمات التصميم المباشرة لتبدأ مشروعك فوراً بأفضل جودة وأسرع وقت تسليم." data-en="Select from the design services below to start your order with high quality and fast delivery.">
+          اختر من بين خدمات التصميم المباشرة لتبدأ مشروعك فوراً بأفضل جودة وأسرع وقت تسليم.
+        </p>
+      </div>
+      
+      <div class="services-grid">
+        <!-- Service 1: YouTube Thumbnails -->
+        <div class="glass-card service-card reveal" id="service-thumbnail">
+          <div class="service-icon-box"><i class="fa-solid fa-play"></i></div>
+          <h3 class="service-card-title" data-ar="صور مصغرة لليوتيوب" data-en="YouTube Thumbnails">صور مصغرة لليوتيوب</h3>
+          <p class="service-card-desc" data-ar="تصاميم عالية النقر (High CTR) تزيد مشاهدات فيديوهاتك على يوتيوب بعناوين واضحة وألوان جذابة." data-en="High-CTR thumbnails crafted to boost video views with striking typography and visual depth.">
+            تصاميم عالية النقر (High CTR) تزيد مشاهدات فيديوهاتك على يوتيوب بعناوين واضحة وألوان جذابة.
+          </p>
+          <button class="service-card-cta service-order-trigger" data-service="صورة مصغرة">
+            <span data-ar="اطلب صورة مصغرة" data-en="Request Thumbnail">اطلب صورة مصغرة</span> <i class="fa-solid fa-arrow-left arrow-icon"></i>
+          </button>
+        </div>
+
+        <!-- Service 2: Logo Design -->
+        <div class="glass-card service-card reveal" id="service-logo">
+          <div class="service-icon-box"><i class="fa-solid fa-bezier-curve"></i></div>
+          <h3 class="service-card-title" data-ar="تصميم شعارات (لوجو)" data-en="Logo Design">تصميم شعارات (لوجو)</h3>
+          <p class="service-card-desc" data-ar="شعارات مبتكرة وعصرية تعبر عن هوية مشروعك وتترك انطباعاً دائم لدى عملائك." data-en="Memorable, timeless brand logos crafted to define your visual identity across web & print.">
+            شعارات مبتكرة وعصرية تعبر عن هوية مشروعك وتترك انطباعاً دائم لدى عملائك.
+          </p>
+          <button class="service-card-cta service-order-trigger" data-service="تصميم شعار (لوجو)">
+            <span data-ar="اطلب شعاراً" data-en="Request Logo">اطلب شعاراً</span> <i class="fa-solid fa-arrow-left arrow-icon"></i>
+          </button>
+        </div>
+
+        <!-- Service 3: Ads & Post Design -->
+        <div class="glass-card service-card reveal" id="service-ads">
+          <div class="service-icon-box"><i class="fa-solid fa-bullhorn"></i></div>
+          <h3 class="service-card-title" data-ar="تصاميم إعلانات ومناشورات" data-en="Ad & Post Designs">تصاميم إعلانات ومناشورات</h3>
+          <p class="service-card-desc" data-ar="بنرات وبوستات موجهة لمنصات فيسبوك، انستجرام، ولينكد إن لزيادة المبيعات والانتشار." data-en="High-converting ad banners and social feed designs optimized for marketing campaigns.">
+            بنرات وبوستات موجهة لمنصات فيسبوك، انستجرام، ولينكد إن لزيادة المبيعات والانتشار.
+          </p>
+          <button class="service-card-cta service-order-trigger" data-service="بوست / إعلان">
+            <span data-ar="اطلب تصميم إعلان" data-en="Request Ad Design">اطلب تصميم إعلان</span> <i class="fa-solid fa-arrow-left arrow-icon"></i>
+          </button>
+        </div>
+
+        <!-- Service 4: Commercial Designs -->
+        <div class="glass-card service-card reveal" id="service-commercial">
+          <div class="service-icon-box"><i class="fa-solid fa-store"></i></div>
+          <h3 class="service-card-title" data-ar="تصميمات تجارية" data-en="Commercial Designs">تصميمات تجارية</h3>
+          <p class="service-card-desc" data-ar="تصاميم متكاملة للمتاجر، المنتجات، العروض المباشرة، وهويات الشركات بلمسة براند عالمية." data-en="Commercial graphic branding for e-commerce products, promotional materials & store banners.">
+            تصاميم متكاملة للمتاجر، المنتجات، العروض المباشرة، وهويات الشركات بلمسة براند عالمية.
+          </p>
+          <button class="service-card-cta service-order-trigger" data-service="تصميمات تجارية">
+            <span data-ar="اطلب تصميم تجاري" data-en="Request Commercial Design">اطلب تصميم تجاري</span> <i class="fa-solid fa-arrow-left arrow-icon"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Button to full Services Page -->
+      <div style="text-align: center; margin-top: 40px;" class="reveal">
+        <a href="services.html" class="btn btn-primary">
+          <span data-ar="استعرض جميع الخدمات والأقسام" data-en="View All Services">استعرض جميع الخدمات والأقسام</span>
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Homepage Portfolio Highlights Section -->
+  <section class="services-section" style="background: rgba(255, 255, 255, 0.01);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle" data-ar="معرض أحدث الأعمال" data-en="Portfolio Showcase">معرض أحدث الأعمال</span>
+        <h2 class="section-title" data-ar="نماذج أعمال AHMED DESIGN" data-en="AHMED DESIGN Portfolio">نماذج أعمال AHMED DESIGN</h2>
+        <p class="section-desc" data-ar="تصفح النماذج الحقيقية المتميزة من تصاميم المنتجات التجارية، وغلاف اليوتيوب، وبنرات الإعلانات." data-en="Explore real creative design models across product ads, YouTube thumbnails, and social banners.">
+          تصفح النماذج الحقيقية المتميزة من تصاميم المنتجات التجارية، وغلاف اليوتيوب، وبنرات الإعلانات.
+        </p>
+      </div>
+
+      <!-- Portfolio Items Grid -->
+      <div class="portfolio-grid reveal">
+        <!-- Item 1: YouTube Thumbnail -->
+        <div class="glass-card portfolio-item" data-category="thumbnails">
+          <div class="portfolio-thumb-box">
+            <img src="portfolio-3.jpg" alt="غلاف يوتيوب - فخ الذكاء" class="portfolio-real-img">
+            <span class="portfolio-tag">YouTube Thumbnail</span>
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm lightbox-btn" data-img="portfolio-3.jpg" data-title="غلاف يوتيوب احترافي - فخ الذكاء" data-desc="تصميم غلاف يوتيوب عالي النقر (High CTR) بلمسة سينمائية، تايبوجرافي زجاجي ثلاثي الأبعاد وإضاءة محترفة.">
+                <i class="fa-solid fa-expand"></i> <span data-ar="تكبير التصميم" data-en="Preview">تكبير التصميم</span>
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4 data-ar="غلاف يوتيوب - فخ الذكاء" data-en="Chess YouTube Thumbnail">غلاف يوتيوب - فخ الذكاء</h4>
+            <p data-ar="زيادة نسبة النقر (CTR +18.5%)" data-en="CTR Boost (+18.5%)">زيادة نسبة النقر (CTR +18.5%)</p>
+          </div>
+        </div>
+
+        <!-- Item 2: Commercial Product Design -->
+        <div class="glass-card portfolio-item" data-category="commercial">
+          <div class="portfolio-thumb-box">
+            <img src="portfolio-1.jpg" alt="تصميم تجاري - حليب العين الطازج" class="portfolio-real-img">
+            <span class="portfolio-tag">Commercial Ad</span>
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm lightbox-btn" data-img="portfolio-1.jpg" data-title="إعلان تجاري - حليب العين الطازج" data-desc="بوستر إعلاني تجاري متكامل للمنتجات، استخدام دمج احترافي، ظلال ناعمة وإبراز مميزات المنتج.">
+                <i class="fa-solid fa-expand"></i> <span data-ar="تكبير التصميم" data-en="Preview">تكبير التصميم</span>
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4 data-ar="إعلان تجاري - حليب العين" data-en="Al Ain Commercial Campaign">إعلان تجاري - حليب العين</h4>
+            <p data-ar="تصميم إعلاني للمنتجات الغذائية" data-en="Food & Beverage Commercial">تصميم إعلاني للمنتجات الغذائية</p>
+          </div>
+        </div>
+
+        <!-- Item 3: Custom Product Visual -->
+        <div class="glass-card portfolio-item" data-category="custom">
+          <div class="portfolio-thumb-box">
+            <img src="portfolio-2.jpg" alt="تصميم منتج خاص - كادبوري ديري ميلك" class="portfolio-real-img">
+            <span class="portfolio-tag">Custom Product Visual</span>
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm lightbox-btn" data-img="portfolio-2.jpg" data-title="تصميم خاص - Cadbury Dairy Milk" data-desc="بوستر دعاية خاص لمنتج كادبوري ديري ميلك بالبندق، تأثيرات الحليب والشوكولاتة المتدفقة بخلفية نيون فخمة.">
+                <i class="fa-solid fa-expand"></i> <span data-ar="تكبير التصميم" data-en="Preview">تكبير التصميم</span>
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4 data-ar="دعاية منتج - Cadbury Dairy Milk" data-en="Cadbury Product Visual">دعاية منتج - Cadbury Dairy Milk</h4>
+            <p data-ar="دمج ثري دي وتأثيرات سائلة" data-en="3D Fluid Manipulation & Lighting">دمج ثري دي وتأثيرات سائلة</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button to full Portfolio Page -->
+      <div style="text-align: center; margin-top: 40px;" class="reveal">
+        <a href="portfolio.html" class="btn btn-secondary">
+          <span data-ar="تصفح كافة المعرض ومقارنة CTR" data-en="Explore Full Portfolio & CTR Slider">تصفح كافة المعرض ومقارنة CTR</span>
+          <i class="fa-solid fa-images"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Homepage Pricing Quick Preview -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle" data-ar="أسعار مناسبة لجميع المشاريع" data-en="Affordable Rates">أسعار مناسبة لجميع المشاريع</span>
+        <h2 class="section-title" data-ar="أسعار الخدمات المباشرة" data-en="Service Pricing Overview">أسعار الخدمات المباشرة</h2>
+        <p class="section-desc" data-ar="أسعار تنافسية وجودة عالمية تبدأ من 100 ج.م فقط لتنفيذ تصاميمك فوراً." data-en="Competitive rates starting from 100 EGP ($2.00) with top execution speed.">
+          أسعار تنافسية وجودة عالمية تبدأ من 100 ج.م فقط لتنفيذ تصاميمك فوراً.
+        </p>
+      </div>
+
+      <div style="text-align: center;" class="reveal">
+        <a href="pricing.html" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-calculator"></i>
+          <span data-ar="افتح صفحة الأسعار وحاسبة التكلفة الفورية" data-en="Open Full Pricing & Cost Estimator">افتح صفحة الأسعار وحاسبة التكلفة الفورية</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🛡️ Trust & Satisfaction Guarantee Section -->
+  <section class="services-section" style="background: rgba(255, 255, 255, 0.01);">
+    <div class="container">
+      <div class="glass-card reveal" style="padding: 40px; border: 1px solid rgba(99, 102, 241, 0.3);">
+        <div style="text-align: center; max-width: 850px; margin: 0 auto;">
+          <span class="hero-badge" style="margin-bottom: 12px;"><i class="fa-solid fa-shield-halved"></i> <span data-ar="ميثاق الثقة والشفافية" data-en="Trust & Quality Commitment">ميثاق الثقة والشفافية</span></span>
+          <h2 class="section-title" style="margin-bottom: 16px;" data-ar="ضمان الرضا التام 100% لجميع العملاء" data-en="100% Client Satisfaction Guarantee">ضمان الرضا التام 100% لجميع العملاء</h2>
+          <p class="section-desc" style="margin-bottom: 30px;" data-ar="لأننا نطلق خدماتنا بشغف ونحرص على بناء سمعة حقيقية ومستدامة، نمنحك ضمانات كاملة لتضمن حقك ومستوى جودة طلبك." data-en="Because we value building long-term trust, we offer strong guarantees to ensure your complete satisfaction.">
+            لأننا نطلق خدماتنا بشغف ونحرص على بناء سمعة حقيقية ومستدامة، نمنحك ضمانات كاملة لتضمن حقك ومستوى جودة طلبك.
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; text-align: right;">
+            <div style="background: rgba(255, 255, 255, 0.03); padding: 20px; border-radius: var(--radius-sm); border: 1px solid var(--border-glass);">
+              <i class="fa-solid fa-eye" style="color: var(--color-primary); font-size: 1.5rem; margin-bottom: 10px;"></i>
+              <h4 data-ar="معاينة المسودة أولاً" data-en="Draft Preview First">معاينة المسودة أولاً</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 6px;" data-ar="نقدم لك معاينة لفكرة وفلسفة التصميم للاطمئنان على التناسق قبل الاعتماد النهائي." data-en="Review design concept preview to ensure 100% alignment with your vision.">نقدم لك معاينة لفكرة وفلسفة التصميم للاطمئنان على التناسق قبل الاعتماد النهائي.</p>
+            </div>
+
+            <div style="background: rgba(255, 255, 255, 0.03); padding: 20px; border-radius: var(--radius-sm); border: 1px solid var(--border-glass);">
+              <i class="fa-solid fa-rotate" style="color: var(--color-secondary); font-size: 1.5rem; margin-bottom: 10px;"></i>
+              <h4 data-ar="تعديلات حتى الرضا" data-en="Unlimited Adjustments">تعديلات حتى الرضا</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 6px;" data-ar="نعدل في الألوان والخطوط والعناوين حتى تكون سعيداً بالنظرة النهائية 100%." data-en="Free edits to typography, colors, and layout until you are 100% happy.">نعدل في الألوان والخطوط والعناوين حتى تكون سعيداً بالنظرة النهائية 100%.</p>
+            </div>
+
+            <div style="background: rgba(255, 255, 255, 0.03); padding: 20px; border-radius: var(--radius-sm); border: 1px solid var(--border-glass);">
+              <i class="fa-solid fa-user-check" style="color: var(--color-accent); font-size: 1.5rem; margin-bottom: 10px;"></i>
+              <h4 data-ar="اهتمام فردي مباشر (1-on-1)" data-en="Dedicated 1-on-1 Support">اهتمام فردي مباشر (1-on-1)</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 6px;" data-ar="يحصل طلبك على الأولوية والتواصل الفوري المباشر مع المصمم أحمد دون وسطاء." data-en="Direct priority communication with lead designer Ahmed for instant updates.">يحصل طلبك على الأولوية والتواصل الفوري المباشر مع المصمم أحمد دون وسطاء.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Contact Section -->
+  <section class="contact-section">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <div class="contact-header">
+          <span class="section-subtitle" data-ar="دعنا نعمل معاً" data-en="Let's Work Together">دعنا نعمل معاً</span>
+          <h2 class="contact-title" data-ar="جاهز لطلب تصميمك؟" data-en="Ready to Start?">جاهز لطلب تصميمك؟</h2>
+          <p class="contact-desc" data-ar="تواصل مع AHMED DESIGN الآن بفكرتك ومتطلباتك ونوع التصميم الذي تحتاجه." data-en="Contact AHMED DESIGN with your idea, requirements, and preferred design style.">
+            تواصل مع AHMED DESIGN الآن بفكرتك ومتطلباتك ونوع التصميم الذي تحتاجه.
+          </p>
+        </div>
+        
+        <div class="contact-list">
+          <div class="contact-item">
+            <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-item-details">
+              <h5 data-ar="البريد الإلكتروني المباشر" data-en="Direct Email">البريد الإلكتروني المباشر</h5>
+              <p><a href="mailto:am9495741@gmail.com" style="color: var(--text-primary); text-decoration: none;">am9495741@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-item-details">
+              <h5 data-ar="الهاتف / واتساب" data-en="Phone / WhatsApp">الهاتف / واتساب</h5>
+              <p><a href="https://wa.me/201289337306?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A8%D9%83%D8%8C%20%D8%B3%D9%8A%D8%AA%D9%85%20%D8%A7%D9%84%D8%B1%D8%AF%20%D8%B9%D9%84%D9%8A%D9%83%20%D9%81%D9%8A%20%D8%A3%D9%82%D8%B1%D8%A8%20%D9%88%D9%82%D8%AA" target="_blank" rel="noopener noreferrer" style="color: var(--text-primary); text-decoration: none;"><i class="fa-brands fa-whatsapp" style="color: #25d366; margin-left: 6px;"></i> +20 128 933 7306</a></p>
+            </div>
+          <div class="contact-item">
+            <div class="contact-icon-box" style="background: rgba(225, 48, 108, 0.15); color: #e1306c;"><i class="fa-brands fa-instagram"></i></div>
+            <div class="contact-item-details">
+              <h5 data-ar="الانستجرام (Instagram)" data-en="Instagram Profile">الانستجرام (Instagram)</h5>
+              <p><a href="https://www.instagram.com/ahme_idet_x" target="_blank" rel="noopener noreferrer" style="color: var(--text-primary); text-decoration: none;">@ahme_idet_x</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-box" style="background: rgba(0, 242, 254, 0.15); color: #00f2fe;"><i class="fa-brands fa-tiktok"></i></div>
+            <div class="contact-item-details">
+              <h5 data-ar="التيك توك (TikTok)" data-en="TikTok Profile">التيك توك (TikTok)</h5>
+              <p><a href="https://www.tiktok.com/@narota28" target="_blank" rel="noopener noreferrer" style="color: var(--text-primary); text-decoration: none;">@narota28</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="glass-card contact-form-card reveal">
+        <form class="contact-form" id="design-request-form" autocomplete="off">
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="client-name" data-ar="اسمك الكريم" data-en="Your Name">اسمك الكريم</label>
+              <input type="text" id="client-name" name="name" class="form-control" placeholder="مثال: أحمد محمد" required maxlength="100">
+            </div>
+            <div class="form-group">
+              <label for="client-email" data-ar="البريد الإلكتروني" data-en="Email Address">البريد الإلكتروني</label>
+              <input type="email" id="client-email" name="email" class="form-control" placeholder="john@example.com" required maxlength="100">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="request-type" data-ar="نوع التصميم المطلوب" data-en="Design Request Type">نوع التصميم المطلوب</label>
+            <select id="request-type" name="category" class="form-control" required>
+              <option value="" disabled selected data-ar="اختر فئة التصميم..." data-en="Select a design category...">اختر فئة التصميم...</option>
+              <option value="صورة مصغرة">صورة مصغرة (100 ج.م / $2.00)</option>
+              <option value="بوست / إعلان">بوست / إعلان (100 ج.م / $2.00)</option>
+              <option value="تصميم شعار (لوجو)">تصميم شعار - لوجو (100 ج.م / $2.00)</option>
+              <option value="تصميمات تجارية">تصميمات تجارية (150 ج.م / $2.50)</option>
+              <option value="تصميمات خاصة كبيرة">تصميمات خاصة كبيرة (300 ج.م / $3.00)</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="request-details" data-ar="تفاصيل المشروع والنص المكتوب" data-en="Project Details & Text">تفاصيل المشروع والنص المكتوب</label>
+            <textarea id="request-details" name="requirements" class="form-control" placeholder="اكتب فكرة التصميم، العناوين المطلوب كتابتها..." required maxlength="1000"></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" id="form-submit-btn" style="align-self: flex-start;">
+            <i class="fa-solid fa-paper-plane"></i> <span data-ar="إرسال طلب التصميم" data-en="Send Design Request">إرسال طلب التصميم</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <a href="index.html" class="footer-logo" id="footer-logo">
+        <img src="profile.jpg" alt="AHMED DESIGN" class="logo-avatar" style="width: 32px; height: 32px;">
+        <span>AHMED DESIGN</span>
+      </a>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <a href="https://www.instagram.com/ahme_idet_x" target="_blank" rel="noopener noreferrer" class="social-icon-btn instagram" title="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@narota28" target="_blank" rel="noopener noreferrer" class="social-icon-btn tiktok" title="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </div>
+      <p class="footer-copyright" id="copyright-text">
+        &copy; 2026 AHMED DESIGN. All rights reserved. خدمات تصميم الجرافيك الاحترافية.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Preview Modal -->
+  <div class="modal-backdrop" id="lightbox-modal">
+    <div class="modal-card lightbox-card">
+      <button class="modal-close" id="lightbox-close" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+      <div class="lightbox-img-box" id="lightbox-img-container">
+        <img src="" id="lightbox-img" alt="معاينة التصميم" style="width: 100%; max-height: 400px; object-fit: contain; border-radius: 8px;">
+      </div>
+      <div class="lightbox-details">
+        <h3 id="lightbox-title">عنوان التصميم</h3>
+        <p id="lightbox-desc">وصف وتفاصيل التصميم</p>
+        <button class="btn btn-primary btn-sm quick-order-trigger" id="lightbox-order-btn" data-ar="طلب تصميم مشابه" data-en="Order Similar Design">طلب تصميم مشابه</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Request Modal Popup -->
+  <div class="modal-backdrop" id="quick-order-modal">
+    <div class="modal-card quick-modal-card">
+      <button class="modal-close" id="quick-modal-close" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+      <div class="quick-modal-header">
+        <i class="fa-solid fa-bolt modal-icon"></i>
+        <h3 data-ar="طلب تصميم سريع عبر الواتساب" data-en="Quick WhatsApp Order">طلب تصميم سريع عبر الواتساب</h3>
+      </div>
+      <form id="quick-order-form" autocomplete="off">
+        <div class="form-group">
+          <label data-ar="اسمك الكريم:" data-en="Your Name:">اسمك الكريم:</label>
+          <input type="text" id="modal-client-name" class="form-control" placeholder="مثال: أحمد" required maxlength="100">
+        </div>
+        <div class="form-group">
+          <label data-ar="نوع التصميم المطلوب:" data-en="Select Design:">نوع التصميم المطلوب:</label>
+          <select id="modal-service-select" class="form-control" required>
+            <option value="صورة مصغرة">صورة مصغرة (100 ج.م / $2.00)</option>
+            <option value="بوست / إعلان">بوست / إعلان (100 ج.م / $2.00)</option>
+            <option value="تصميم شعار (لوجو)">تصميم شعار - لوجو (100 ج.م / $2.00)</option>
+            <option value="تصميمات تجارية">تصميمات تجارية (150 ج.م / $2.50)</option>
+            <option value="تصميمات خاصة كبيرة">تصميمات خاصة كبيرة (300 ج.م / $3.00)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-ar="ملاحظات وفكرة التصميم:" data-en="Design Notes:">ملاحظات وفكرة التصميم:</label>
+          <textarea id="modal-notes" class="form-control" placeholder="اكتب عنوان التصميم أو الملاحظات البسيطة..." required maxlength="500"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <i class="fa-brands fa-whatsapp"></i> <span data-ar="تأكيد والفتح في الواتساب" data-en="Confirm & Open WhatsApp">تأكيد والفتح في الواتساب</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://wa.me/201289337306?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A8%D9%83%D8%8C%20%D8%B3%D9%8A%D8%AA%D9%85%20%D8%A7%D9%84%D8%B1%D8%AF%20%D8%B9%D9%84%D9%8A%D9%83%20%D9%81%D9%8A%20%D8%A3%D9%82%D8%B1%D8%A8%20%D9%88%D9%82%D8%AA" 
+     class="whatsapp-float-btn" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Contact via WhatsApp" 
+     title="تواصل معنا عبر واتساب">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scroll To Top Button -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="العودة لأعلى" title="العودة لأعلى">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Sticky Mobile WhatsApp Bar -->
+  <div class="mobile-wa-bar" id="mobile-wa-bar">
+    <a href="https://wa.me/201289337306?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A8%D9%83%D8%8C%20%D8%B3%D9%8A%D8%AA%D9%85%20%D8%A7%D9%84%D8%B1%D8%AF%20%D8%B9%D9%84%D9%8A%D9%83%20%D9%81%D9%8A%20%D8%A3%D9%82%D8%B1%D8%A8%20%D9%88%D9%82%D8%AA"
+       target="_blank" rel="noopener noreferrer" class="mobile-wa-link">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span data-ar="تواصل عبر واتساب" data-en="Chat on WhatsApp">تواصل عبر واتساب</span>
+    </a>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Link client-side Javascript -->
+  <script src="app.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Inline failsafe: hide loading screen fast -->
+  <script>
+    (function () {
+      var ls = document.getElementById('loading-screen');
+      if (!ls) return;
+      function hide() { ls.classList.add('hidden'); }
+      setTimeout(hide, 800);
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        setTimeout(hide, 300);
+      } else {
+        document.addEventListener('DOMContentLoaded', function () { setTimeout(hide, 300); });
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AHMED DESIGN - تواصل معنا واطلب تصميمك | Contact Us</title>
+  <meta name="description" content="تواصل مباشرة مع AHMED DESIGN لطلب تصميمات الجرافيك، غلاف يوتيوب، شعارات، وإعلانات تجارية عبر الواتساب أو البريد الإلكتروني.">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AHMED DESIGN - تواصل معنا واطلب تصميمك">
+  <meta property="og:description" content="تواصل مباشرة مع AHMED DESIGN عبر الواتساب أو البريد الإلكتروني لطلب تصميم احترافي.">
+  <meta property="og:image" content="profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AHMED DESIGN - تواصل معنا">
+  <meta name="twitter:image" content="profile.jpg">
+
+  <!-- Security Meta Tags -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: blob:; img-src 'self' data: https: blob:; style-src 'self' 'unsafe-inline' https:; font-src 'self' https: data:;">
+
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon with Circular Profile Image -->
+  <link rel="icon" type="image/jpeg" href="profile.jpg">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ✨ Loading Screen -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="loading-inner">
+      <div class="loading-logo">
+        <img src="profile.jpg" alt="AHMED DESIGN" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 3px solid var(--color-primary); box-shadow: 0 0 20px rgba(99, 102, 241, 0.6);">
+      </div>
+      <div class="loading-ring"></div>
+      <p class="loading-text">AHMED DESIGN</p>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header-nav" id="header-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="nav-logo">
+        <img src="profile.jpg" alt="AHMED DESIGN" class="logo-avatar">
+        <span>AHMED DESIGN</span>
+      </a>
+      
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="القائمة">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+        <li><a href="services.html" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+        <li><a href="portfolio.html" data-ar="معرض الأعمال" data-en="Portfolio">معرض الأعمال</a></li>
+        <li><a href="pricing.html" data-ar="الأسعار" data-en="Pricing">الأسعار</a></li>
+        <li><a href="about.html" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+        <li><a href="contact.html" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+      </ul>
+      
+      <div class="nav-controls">
+        <!-- Social Media Buttons -->
+        <a href="https://www.instagram.com/ahme_idet_x" target="_blank" rel="noopener noreferrer" class="social-icon-btn instagram" title="الانستجرام - Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@narota28" target="_blank" rel="noopener noreferrer" class="social-icon-btn tiktok" title="التيك توك - TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <button class="theme-toggle-btn" id="theme-toggle-btn" title="تغيير الوضع">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="lang-toggle-btn" id="lang-toggle-btn" title="Switch Language">
+          <i class="fa-solid fa-globe"></i> <span id="lang-text">EN</span>
+        </button>
+        <button class="btn btn-secondary btn-sm" id="open-quick-modal-btn">
+          <i class="fa-solid fa-bolt"></i> <span data-ar="طلب سريع" data-en="Quick Order">طلب سريع</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact & Request Form Section -->
+  <section class="contact-section" style="padding-top: 140px;" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <div class="contact-header">
+          <span class="section-subtitle" data-ar="دعنا نعمل معاً" data-en="Let's Work Together">دعنا نعمل معاً</span>
+          <h2 class="contact-title" data-ar="جاهز لطلب تصميمك؟" data-en="Ready to Start?">جاهز لطلب تصميمك؟</h2>
+          <p class="contact-desc" data-ar="تواصل مع AHMED DESIGN الآن بفكرتك ومتطلباتك ونوع التصميم الذي تحتاجه وسيتم الرد عليك فوراً." data-en="Contact AHMED DESIGN with your idea, requirements, and preferred design style for immediate support.">
+            تواصل مع AHMED DESIGN الآن بفكرتك ومتطلباتك ونوع التصميم الذي تحتاجه وسيتم الرد عليك فوراً.
+          </p>
+        </div>
+        
+        <div class="contact-list">
+          <div class="contact-item">
+            <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-item-details">
+              <h5 data-ar="البريد الإلكتروني المباشر" data-en="Direct Email">البريد الإلكتروني المباشر</h5>
+              <p><a href="mailto:am9495741@gmail.com" style="color: var(--text-primary); text-decoration: none;">am9495741@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-item-details">
+              <h5 data-ar="الهاتف / واتساب" data-en="Phone / WhatsApp">الهاتف / واتساب</h5>
+              <p><a href="https://wa.me/201289337306?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A8%D9%83%D8%8C%20%D8%B3%D9%8A%D8%AA%D9%85%20%D8%A7%D9%84%D8%B1%D8%AF%20%D8%B9%D9%84%D9%8A%D9%83%20%D9%81%D9%8A%20%D8%A3%D9%82%D8%B1%D8%A8%20%D9%88%D9%82%D8%AA" target="_blank" rel="noopener noreferrer" style="color: var(--text-primary); text-decoration: none;"><i class="fa-brands fa-whatsapp" style="color: #25d366; margin-left: 6px;"></i> +20 128 933 7306</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-box" style="background: rgba(225, 48, 108, 0.15); color: #e1306c;"><i class="fa-brands fa-instagram"></i></div>
+            <div class="contact-item-details">
+              <h5 data-ar="الانستجرام (Instagram)" data-en="Instagram Profile">الانستجرام (Instagram)</h5>
+              <p><a href="https://www.instagram.com/ahme_idet_x" target="_blank" rel="noopener noreferrer" style="color: var(--text-primary); text-decoration: none;">@ahme_idet_x</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-box" style="background: rgba(0, 242, 254, 0.15); color: #00f2fe;"><i class="fa-brands fa-tiktok"></i></div>
+            <div class="contact-item-details">
+              <h5 data-ar="التيك توك (TikTok)" data-en="TikTok Profile">التيك توك (TikTok)</h5>
+              <p><a href="https://www.tiktok.com/@narota28" target="_blank" rel="noopener noreferrer" style="color: var(--text-primary); text-decoration: none;">@narota28</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon-box"><i class="fa-solid fa-clock"></i></div>
+            <div class="contact-item-details">
+              <h5 data-ar="سرعة الرد" data-en="Response Time">سرعة الرد</h5>
+              <p data-ar="خلال أقصر وقت (أقل من 24 ساعة)" data-en="Within 24 Hours">خلال أقصر وقت (أقل من 24 ساعة)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Direct WhatsApp Box Card -->
+        <div class="glass-card" style="margin-top: 30px; padding: 24px;">
+          <h4 style="margin-bottom: 10px; font-size: 1.1rem;" data-ar="💬 التواصل السريع المباشر" data-en="💬 Direct Instant Chat">💬 التواصل السريع المباشر</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;" data-ar="تفضل بالتحدث المباشر معنا عبر الواتساب للحصول على استشارة سريعة." data-en="Chat directly on WhatsApp for instant inquiries and orders.">
+            تفضل بالتحدث المباشر معنا عبر الواتساب للحصول على استشارة سريعة.
+          </p>
+          <a href="https://wa.me/201289337306?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A8%D9%83%D8%8C%20%D8%B3%D9%8A%D8%AA%D9%85%20%D8%A7%D9%84%D8%B1%D8%AF%20%D8%B9%D9%84%D9%8A%D9%83%20%D9%81%D9%8A%20%D8%A3%D9%82%D8%B1%D8%A8%20%D9%88%D9%82%D8%AA" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block">
+            <i class="fa-brands fa-whatsapp"></i> <span data-ar="محادثة واتساب فورية" data-en="Chat on WhatsApp">محادثة واتساب فورية</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="glass-card contact-form-card reveal">
+        <form class="contact-form" id="design-request-form" autocomplete="off">
+          <div class="form-group-row">
+            <div class="form-group">
+              <label for="client-name" data-ar="اسمك الكريم" data-en="Your Name">اسمك الكريم</label>
+              <input type="text" id="client-name" name="name" class="form-control" placeholder="مثال: أحمد محمد" required maxlength="100">
+            </div>
+            <div class="form-group">
+              <label for="client-email" data-ar="البريد الإلكتروني" data-en="Email Address">البريد الإلكتروني</label>
+              <input type="email" id="client-email" name="email" class="form-control" placeholder="john@example.com" required maxlength="100">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="request-type" data-ar="نوع التصميم المطلوب" data-en="Design Request Type">نوع التصميم المطلوب</label>
+            <select id="request-type" name="category" class="form-control" required>
+              <option value="" disabled selected data-ar="اختر فئة التصميم..." data-en="Select a design category...">اختر فئة التصميم...</option>
+              <option value="صورة مصغرة">صورة مصغرة (100 ج.م / $2.00)</option>
+              <option value="بوست / إعلان">بوست / إعلان (100 ج.م / $2.00)</option>
+              <option value="تصميم شعار (لوجو)">تصميم شعار - لوجو (100 ج.م / $2.00)</option>
+              <option value="تصميمات تجارية">تصميمات تجارية (150 ج.م / $2.50)</option>
+              <option value="تصميمات خاصة كبيرة">تصميمات خاصة كبيرة (300 ج.م / $3.00)</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="request-style" data-ar="الستايل والألوان المفضلة" data-en="Preferred Style & Colors">الستايل والألوان المفضلة</label>
+            <input type="text" id="request-style" name="style" class="form-control" placeholder="مثال: مودرن نيون، الستايل الداكن، أزرق وذهبي" required maxlength="150">
+          </div>
+          
+          <div class="form-group">
+            <label for="request-details" data-ar="تفاصيل المشروع والنص المكتوب" data-en="Project Details & Text">تفاصيل المشروع والنص المكتوب</label>
+            <textarea id="request-details" name="requirements" class="form-control" placeholder="اكتب فكرة التصميم، العناوين المطلوب كتابتها، وأي مراجع..." required maxlength="1000"></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary" id="form-submit-btn" style="align-self: flex-start;">
+            <i class="fa-solid fa-paper-plane"></i> <span data-ar="إرسال طلب التصميم" data-en="Send Design Request">إرسال طلب التصميم</span>
+          </button>
+          
+          <!-- Success feedback -->
+          <div class="submit-alert" id="submit-success-alert">
+            <i class="fa-solid fa-circle-check"></i>
+            <span data-ar="تم استلام طلبك بنجاح! سيتم التواصل معك في أقرب وقت." data-en="Success! AHMED DESIGN has received your request and will reach out shortly.">تم استلام طلبك بنجاح! سيتم التواصل معك في أقرب وقت.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <a href="index.html" class="footer-logo">
+        <img src="profile.jpg" alt="AHMED DESIGN" class="logo-avatar" style="width: 32px; height: 32px;">
+        <span>AHMED DESIGN</span>
+      </a>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <a href="https://www.instagram.com/ahme_idet_x" target="_blank" rel="noopener noreferrer" class="social-icon-btn instagram" title="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@narota28" target="_blank" rel="noopener noreferrer" class="social-icon-btn tiktok" title="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2026 AHMED DESIGN. All rights reserved. خدمات تصميم الجرافيك الاحترافية.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Quick Request Modal Popup -->
+  <div class="modal-backdrop" id="quick-order-modal">
+    <div class="modal-card quick-modal-card">
+      <button class="modal-close" id="quick-modal-close" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+      <div class="quick-modal-header">
+        <i class="fa-solid fa-bolt modal-icon"></i>
+        <h3 data-ar="طلب تصميم سريع عبر الواتساب" data-en="Quick WhatsApp Order">طلب تصميم سريع عبر الواتساب</h3>
+      </div>
+      <form id="quick-order-form" autocomplete="off">
+        <div class="form-group">
+          <label data-ar="اسمك الكريم:" data-en="Your Name:">اسمك الكريم:</label>
+          <input type="text" id="modal-client-name" class="form-control" placeholder="مثال: أحمد" required maxlength="100">
+        </div>
+        <div class="form-group">
+          <label data-ar="نوع التصميم المطلوب:" data-en="Select Design:">نوع التصميم المطلوب:</label>
+          <select id="modal-service-select" class="form-control" required>
+            <option value="صورة مصغرة">صورة مصغرة (100 ج.م / $2.00)</option>
+            <option value="بوست / إعلان">بوست / إعلان (100 ج.م / $2.00)</option>
+            <option value="تصميم شعار (لوجو)">تصميم شعار - لوجو (100 ج.م / $2.00)</option>
+            <option value="تصميمات تجارية">تصميمات تجارية (150 ج.م / $2.50)</option>
+            <option value="تصميمات خاصة كبيرة">تصميمات خاصة كبيرة (300 ج.م / $3.00)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-ar="ملاحظات وفكرة التصميم:" data-en="Design Notes:">ملاحظات وفكرة التصميم:</label>
+          <textarea id="modal-notes" class="form-control" placeholder="اكتب عنوان التصميم أو الملاحظات البسيطة..." required maxlength="500"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <i class="fa-brands fa-whatsapp"></i> <span data-ar="تأكيد والفتح في الواتساب" data-en="Confirm & Open WhatsApp">تأكيد والفتح في الواتساب</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://wa.me/201289337306?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A8%D9%83%D8%8C%20%D8%B3%D9%8A%D8%AA%D9%85%20%D8%A7%D9%84%D8%B1%D8%AF%20%D8%B9%D9%84%D9%8A%D9%83%20%D9%81%D9%8A%20%D8%A3%D9%82%D8%B1%D8%A8%20%D9%88%D9%82%D8%AA" 
+     class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Contact via WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scroll To Top Button -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="العودة لأعلى">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="app.js"></script>
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      var ls = document.getElementById('loading-screen');
+      if (!ls) return;
+      function hide() { ls.classList.add('hidden'); }
+      setTimeout(hide, 800);
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        setTimeout(hide, 300);
+      } else {
+        document.addEventListener('DOMContentLoaded', function () { setTimeout(hide, 300); });
+      }
+    })();
+  </script>
+</body>
+</html>

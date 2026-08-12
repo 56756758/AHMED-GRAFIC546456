@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AHMED DESIGN - من نحن والأسئلة الشائعة | About & FAQ</title>
+  <meta name="description" content="تعرف على AHMED DESIGN ومصمم الجرافيك أحمد، مسار العمل المخصص، وأهم الإجابات على الأسئلة الشائعة المتعلقة بالطلب والتسليم.">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AHMED DESIGN - من نحن وفريق العمل">
+  <meta property="og:description" content="تعرف على AHMED DESIGN ومصمم الجرافيك أحمد ومسار العمل والأسئلة الشائعة.">
+  <meta property="og:image" content="profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AHMED DESIGN - من نحن">
+  <meta name="twitter:image" content="profile.jpg">
+
+  <!-- Security Meta Tags -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: blob:; img-src 'self' data: https: blob:; style-src 'self' 'unsafe-inline' https:; font-src 'self' https: data:;">
+
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon with Circular Profile Image -->
+  <link rel="icon" type="image/jpeg" href="profile.jpg">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ✨ Loading Screen -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="loading-inner">
+      <div class="loading-logo">
+        <img src="profile.jpg" alt="AHMED DESIGN" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 3px solid var(--color-primary); box-shadow: 0 0 20px rgba(99, 102, 241, 0.6);">
+      </div>
+      <div class="loading-ring"></div>
+      <p class="loading-text">AHMED DESIGN</p>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header-nav" id="header-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="nav-logo">
+        <img src="profile.jpg" alt="AHMED DESIGN" class="logo-avatar">
+        <span>AHMED DESIGN</span>
+      </a>
+      
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="القائمة">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+        <li><a href="services.html" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+        <li><a href="portfolio.html" data-ar="معرض الأعمال" data-en="Portfolio">معرض الأعمال</a></li>
+        <li><a href="pricing.html" data-ar="الأسعار" data-en="Pricing">الأسعار</a></li>
+        <li><a href="about.html" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+        <li><a href="contact.html" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+      </ul>
+      
+      <div class="nav-controls">
+        <!-- Social Media Buttons -->
+        <a href="https://www.instagram.com/ahme_idet_x" target="_blank" rel="noopener noreferrer" class="social-icon-btn instagram" title="الانستجرام - Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@narota28" target="_blank" rel="noopener noreferrer" class="social-icon-btn tiktok" title="التيك توك - TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <button class="theme-toggle-btn" id="theme-toggle-btn" title="تغيير الوضع">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="lang-toggle-btn" id="lang-toggle-btn" title="Switch Language">
+          <i class="fa-solid fa-globe"></i> <span id="lang-text">EN</span>
+        </button>
+        <button class="btn btn-secondary btn-sm" id="open-quick-modal-btn">
+          <i class="fa-solid fa-bolt"></i> <span data-ar="طلب سريع" data-en="Quick Order">طلب سريع</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="services-section" style="padding-top: 140px;" id="about">
+    <div class="container hero-grid">
+      <div class="hero-visual">
+        <div class="hero-circle-glow" style="background: var(--color-secondary);"></div>
+        <img src="profile.jpg" alt="Ahmed Profile Photo" class="glass-card" style="width: 100%; max-width: 450px; border-radius: var(--radius-md); object-fit: cover; height: 450px; border: 1px solid rgba(255, 255, 255, 0.1);" id="about-img">
+      </div>
+      <div class="hero-content reveal">
+        <span class="section-subtitle" style="text-align: right;" data-ar="من هو أحمد؟" data-en="Who is Ahmed?">من هو أحمد؟</span>
+        <h2 class="section-title" style="text-align: right;" data-ar="مصمم جرافيك ومبتكر بصرى" data-en="Visual Creator & Graphic Specialist">مصمم جرافيك ومبتكر بصرى</h2>
+        <p data-ar="أحمد هو مصمم جرافيك مستقل وصاحب AHMED DESIGN، يجمع بين الأهداف التجارية والجماليات البصرية الخلابة. من خلال تطبيق قواعد التنسيق الذكية مع الجرافيكس عالي الجودة، يضمن تحقيق كل تصميم لهدفه—سواء كان ذلك زيادة النقرات على يوتيوب، تعزيز تميز العلامة التجارية للشعار، أو تحويل إعلانات السوشيال ميديا لمبيعات." data-en="Ahmed is a freelance graphic designer behind AHMED DESIGN who bridges commercial objectives with striking aesthetics. By combining layout principles with high-fidelity graphics, Ahmed ensures every design achieves its goal.">
+          أحمد هو مصمم جرافيك مستقل وصاحب AHMED DESIGN، يجمع بين الأهداف التجارية والجماليات البصرية الخلابة. من خلال تطبيق قواعد التنسيق الذكية مع الجرافيكس عالي الجودة، يضمن تحقيق كل تصميم لهدفه—سواء كان ذلك زيادة النقرات على يوتيوب، تعزيز تميز العلامة التجارية للشعار، أو تحويل إعلانات السوشيال ميديا لمبيعات.
+        </p>
+        <p data-ar="كل طلب يمر بمسار عمل مخصص: تحديد الملاحظات، اختيار الألوان والستايل، تقديم نماذج مسودة، وتسليم التصميم النهائي بجاهزية تامة للإطلاق." data-en="Every order follows a dedicated collaboration workflow: aligning requirements, establishing style direction, and delivering pristine assets ready for launch.">
+          كل طلب يمر بمسار عمل مخصص: تحديد الملاحظات، اختيار الألوان والستايل، تقديم نماذج مسودة، وتسليم التصميم النهائي بجاهزية تامة للإطلاق.
+        </p>
+        <div style="display: flex; gap: 20px; margin-top: 10px;">
+          <div class="stat-item" style="text-align: right;">
+            <h3 style="color: var(--color-primary); font-size: 2rem;">100%</h3>
+            <p data-ar="ضمان الرضا والتعديل" data-en="Satisfaction Guaranteed">ضمان الرضا والتعديل</p>
+          </div>
+          <div class="stat-item" style="text-align: right;">
+            <h3 style="color: var(--color-secondary); font-size: 2rem;">24h</h3>
+            <p data-ar="تسليم فائق السرعة" data-en="Express Turnaround">تسليم فائق السرعة</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow Section -->
+  <section class="services-section" style="background: rgba(255, 255, 255, 0.01);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle" data-ar="طريقة العمل" data-en="Our Process">طريقة العمل</span>
+        <h2 class="section-title" data-ar="مسار تنفيذ طلبك خطوة بخطوة" data-en="Step-by-Step Order Workflow">مسار تنفيذ طلبك خطوة بخطوة</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px;" class="reveal">
+        <div class="glass-card" style="padding: 28px; text-align: center;">
+          <div style="width: 50px; height: 50px; background: rgba(99, 102, 241, 0.2); color: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px auto; font-weight: 800; font-size: 1.3rem;">1</div>
+          <h4 data-ar="تحديد الفكرة والملاحظات" data-en="1. Project Brief">تحديد الفكرة والملاحظات</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 8px;" data-ar="نستلم تفاصيل الطلب، النصوص، والستايل المفكير به." data-en="We receive your title, text, requirements and style notes.">نستلم تفاصيل الطلب، النصوص، والستايل المفكير به.</p>
+        </div>
+
+        <div class="glass-card" style="padding: 28px; text-align: center;">
+          <div style="width: 50px; height: 50px; background: rgba(236, 72, 153, 0.2); color: var(--color-secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px auto; font-weight: 800; font-size: 1.3rem;">2</div>
+          <h4 data-ar="التركيب والدمج البصري" data-en="2. Visual Composition">التركيب والدمج البصري</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 8px;" data-ar="معالجة الإضاءة، خطوط التايبوجرافي، والتأثيرات الزجاجية والثلاثية." data-en="Lighting setup, typography formatting, and 3D fluid effects.">معالجة الإضاءة، خطوط التايبوجرافي، والتأثيرات الزجاجية والثلاثية.</p>
+        </div>
+
+        <div class="glass-card" style="padding: 28px; text-align: center;">
+          <div style="width: 50px; height: 50px; background: rgba(139, 92, 246, 0.2); color: var(--color-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px auto; font-weight: 800; font-size: 1.3rem;">3</div>
+          <h4 data-ar="المعاينة والتعديل" data-en="3. Preview & Revisions">المعاينة والتعديل</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 8px;" data-ar="عرض المسودة وإجراء أي تعديلات مطلوبة للوصول للكمال." data-en="Share initial model draft and make any revisions until ideal.">عرض المسودة وإجراء أي تعديلات مطلوبة للوصول للكمال.</p>
+        </div>
+
+        <div class="glass-card" style="padding: 28px; text-align: center;">
+          <div style="width: 50px; height: 50px; background: rgba(34, 197, 94, 0.2); color: var(--color-success); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px auto; font-weight: 800; font-size: 1.3rem;">4</div>
+          <h4 data-ar="التسليم النهائي الفائق" data-en="4. Final Delivery">التسليم النهائي الفائق</h4>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 8px;" data-ar="تسليم التصميم بدقة Ultra HD مع الملفات المفتوحة PSD." data-en="Export high-resolution assets (PNG/JPG/PSD) ready to publish.">تسليم التصميم بدقة Ultra HD مع الملفات المفتوحة PSD.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🛡️ Trust & Satisfaction Guarantee Commitment -->
+  <section class="services-section" style="background: rgba(255, 255, 255, 0.01);">
+    <div class="container">
+      <div class="glass-card reveal" style="padding: 40px; border: 1px solid rgba(99, 102, 241, 0.3);">
+        <div style="text-align: center; max-width: 850px; margin: 0 auto;">
+          <span class="hero-badge" style="margin-bottom: 12px;"><i class="fa-solid fa-shield-halved"></i> <span data-ar="ميثاق الشفافية وجودة الخدمة" data-en="Quality & Transparency Commitment">ميثاق الشفافية وجودة الخدمة</span></span>
+          <h2 class="section-title" style="margin-bottom: 16px;" data-ar="ضمان الرضا 100% بدون أي مخاطرة" data-en="100% Risk-Free Satisfaction Guarantee">ضمان الرضا 100% بدون أي مخاطرة</h2>
+          <p class="section-desc" style="margin-bottom: 30px;" data-ar="لأننا نطلق خدماتنا حديثاً ونضع بناء سمعتنا فوق كل حسابات، فإن رضاك وثقتك بطلبك هي الأولوية الأولى والمطلقة." data-en="Because we are building our reputation on authentic client trust, your satisfaction is our top priority.">
+            لأننا نطلق خدماتنا حديثاً ونضع بناء سمعتنا فوق كل حسابات، فإن رضاك وثقتك بطلبك هي الأولوية الأولى والمطلقة.
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; text-align: right;">
+            <div style="background: rgba(255, 255, 255, 0.03); padding: 20px; border-radius: var(--radius-sm); border: 1px solid var(--border-glass);">
+              <i class="fa-solid fa-eye" style="color: var(--color-primary); font-size: 1.5rem; margin-bottom: 10px;"></i>
+              <h4 data-ar="1. معاينة المسودة أولاً" data-en="1. Concept Preview">1. معاينة المسودة أولاً</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 6px;" data-ar="تشاهد نموذج وفكرة التصميم الأولية وتقتنع بها قبل اعتماد واستلام الملفات النهائية." data-en="Preview the concept design draft before final file delivery.">تشاهد نموذج وفكرة التصميم الأولية وتقتنع بها قبل اعتماد واستلام الملفات النهائية.</p>
+            </div>
+
+            <div style="background: rgba(255, 255, 255, 0.03); padding: 20px; border-radius: var(--radius-sm); border: 1px solid var(--border-glass);">
+              <i class="fa-solid fa-rotate" style="color: var(--color-secondary); font-size: 1.5rem; margin-bottom: 10px;"></i>
+              <h4 data-ar="2. تعديلات حتى إعجابك التام" data-en="2. Edits Until Perfect">2. تعديلات حتى إعجابك التام</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 6px;" data-ar="نستمع لملاحظاتك ونعدل في الخطوط والألوان والإضاءة دون أي تكلفة إضافية." data-en="Unlimited edits to fonts, colors, and graphics at no additional cost.">نستمع لملاحظاتك ونعدل في الخطوط والألوان والإضاءة دون أي تكلفة إضافية.</p>
+            </div>
+
+            <div style="background: rgba(255, 255, 255, 0.03); padding: 20px; border-radius: var(--radius-sm); border: 1px solid var(--border-glass);">
+              <i class="fa-solid fa-clock" style="color: var(--color-success); font-size: 1.5rem; margin-bottom: 10px;"></i>
+              <h4 data-ar="3. سرعة استجابة وأولية فائقة" data-en="3. Fast Priority Attention">3. سرعة استجابة وأولية فائقة</h4>
+              <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 6px;" data-ar="كل عميل يحصل على تركيز 100% واهتمام مباشر لتنفيذ طلباته في غضون 24 ساعة." data-en="Direct 1-on-1 focus to complete your order within 24 hours.">كل عميل يحصل على تركيز 100% واهتمام مباشر لتنفيذ طلباته في غضون 24 ساعة.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- FAQ Accordion Section -->
+  <section class="services-section" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle" data-ar="إجابات سريعة" data-en="Got Questions?">إجابات سريعة</span>
+        <h2 class="section-title" data-ar="الأسئلة الشائعة" data-en="Frequently Asked Questions">الأسئلة الشائعة</h2>
+        <p class="section-desc" data-ar="إليك أهم الاستفسارات الشائعة حول كيفية الطلب، التسليم، والتعديلات." data-en="Find quick answers regarding design orders, turnaround times, and revisions.">
+          إليك أهم الاستفسارات الشائعة حول كيفية الطلب، التسليم، والتعديلات.
+        </p>
+      </div>
+
+      <div class="faq-container reveal">
+        <!-- FAQ 1 -->
+        <div class="glass-card faq-item">
+          <button class="faq-question">
+            <span data-ar="كم تستغرق مدة تنفيذ وتسليم التصميم؟" data-en="How long does design delivery take?">كم تستغرق مدة تنفيذ وتسليم التصميم؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-ar="يتم تسليم معظم الصور المصغرة والبوستات والشعارات خلال 24 إلى 48 ساعة فقط كحد أقصى. وفي حالة الطلبات المستعجلة، يمكن التسليم في نفس اليوم." data-en="Most thumbnails, ads, and logos are delivered within 24 to 48 hours. Express same-day delivery is available for urgent orders.">
+              يتم تسليم معظم الصور المصغرة والبوستات والشعارات خلال 24 إلى 48 ساعة فقط كحد أقصى. وفي حالة الطلبات المستعجلة، يمكن التسليم في نفس اليوم.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="glass-card faq-item">
+          <button class="faq-question">
+            <span data-ar="ما هي صيغ الملفات التي سأستلمها؟" data-en="What file formats will I receive?">ما هي صيغ الملفات التي سأستلمها؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-ar="تستلم ملفات الصور بجهوزية فائقة بدقة Ultra HD بصيغ PNG و JPG، بالإضافة إلى ملف المصدر المفتوح للتعديل (Photoshop PSD / Illustrator AI) حسب نوع الخدمة." data-en="You receive Ultra HD PNG and JPG files, along with edit-ready source files (PSD / AI) depending on the package.">
+              تستلم ملفات الصور بجهوزية فائقة بدقة Ultra HD بصيغ PNG و JPG، بالإضافة إلى ملف المصدر المفتوح للتعديل (Photoshop PSD / Illustrator AI) حسب نوع الخدمة.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="glass-card faq-item">
+          <button class="faq-question">
+            <span data-ar="ما هي سياسة التعديلات على التصميم؟" data-en="What is the revision policy?">ما هي سياسة التعديلات على التصميم؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-ar="أقدم تعديلات مجانية غير محدودة حتى تكون راضياً بنسبة 100% عن النتيجة النهائية والتحف البصرية المطلوبة." data-en="I offer unlimited revisions until you are 100% satisfied with the final result.">
+              أقدم تعديلات مجانية غير محدودة حتى تكون راضياً بنسبة 100% عن النتيجة النهائية والتحف البصرية المطلوبة.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="glass-card faq-item">
+          <button class="faq-question">
+            <span data-ar="ما هي طرق الدفع المتاحة؟" data-en="What payment methods are supported?">ما هي طرق الدفع المتاحة؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p data-ar="يمكنك الدفع بسهولة داخل مصر عبر محفظة فودافون كاش (Vodafone Cash) أو تطبيق InstaPay، ومن خارج مصر عبر PayPal أو التحويلات البنكية." data-en="In Egypt, you can pay via Vodafone Cash or InstaPay. Internationally, payments are accepted via PayPal.">
+              يمكنك الدفع بسهولة داخل مصر عبر محفظة فودافون كاش (Vodafone Cash) أو تطبيق InstaPay، ومن خارج مصر عبر PayPal أو التحويلات البنكية.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <a href="index.html" class="footer-logo">
+        <img src="profile.jpg" alt="AHMED DESIGN" class="logo-avatar" style="width: 32px; height: 32px;">
+        <span>AHMED DESIGN</span>
+      </a>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <a href="https://www.instagram.com/ahme_idet_x" target="_blank" rel="noopener noreferrer" class="social-icon-btn instagram" title="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@narota28" target="_blank" rel="noopener noreferrer" class="social-icon-btn tiktok" title="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2026 AHMED DESIGN. All rights reserved. خدمات تصميم الجرافيك الاحترافية.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Quick Request Modal Popup -->
+  <div class="modal-backdrop" id="quick-order-modal">
+    <div class="modal-card quick-modal-card">
+      <button class="modal-close" id="quick-modal-close" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+      <div class="quick-modal-header">
+        <i class="fa-solid fa-bolt modal-icon"></i>
+        <h3 data-ar="طلب تصميم سريع عبر الواتساب" data-en="Quick WhatsApp Order">طلب تصميم سريع عبر الواتساب</h3>
+      </div>
+      <form id="quick-order-form" autocomplete="off">
+        <div class="form-group">
+          <label data-ar="اسمك الكريم:" data-en="Your Name:">اسمك الكريم:</label>
+          <input type="text" id="modal-client-name" class="form-control" placeholder="مثال: أحمد" required maxlength="100">
+        </div>
+        <div class="form-group">
+          <label data-ar="نوع التصميم المطلوب:" data-en="Select Design:">نوع التصميم المطلوب:</label>
+          <select id="modal-service-select" class="form-control" required>
+            <option value="صورة مصغرة">صورة مصغرة (100 ج.م / $2.00)</option>
+            <option value="بوست / إعلان">بوست / إعلان (100 ج.م / $2.00)</option>
+            <option value="تصميم شعار (لوجو)">تصميم شعار - لوجو (100 ج.م / $2.00)</option>
+            <option value="تصميمات تجارية">تصميمات تجارية (150 ج.م / $2.50)</option>
+            <option value="تصميمات خاصة كبيرة">تصميمات خاصة كبيرة (300 ج.م / $3.00)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-ar="ملاحظات وفكرة التصميم:" data-en="Design Notes:">ملاحظات وفكرة التصميم:</label>
+          <textarea id="modal-notes" class="form-control" placeholder="اكتب عنوان التصميم أو الملاحظات البسيطة..." required maxlength="500"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <i class="fa-brands fa-whatsapp"></i> <span data-ar="تأكيد والفتح في الواتساب" data-en="Confirm & Open WhatsApp">تأكيد والفتح في الواتساب</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://wa.me/201289337306?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A8%D9%83%D8%8C%20%D8%B3%D9%8A%D8%AA%D9%85%20%D8%A7%D9%84%D8%B1%D8%AF%20%D8%B9%D9%84%D9%8A%D9%83%20%D9%81%D9%8A%20%D8%A3%D9%82%D8%B1%D8%A8%20%D9%88%D9%82%D8%AA" 
+     class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Contact via WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scroll To Top Button -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="العودة لأعلى">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="app.js"></script>
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      var ls = document.getElementById('loading-screen');
+      if (!ls) return;
+      function hide() { ls.classList.add('hidden'); }
+      setTimeout(hide, 800);
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        setTimeout(hide, 300);
+      } else {
+        document.addEventListener('DOMContentLoaded', function () { setTimeout(hide, 300); });
+      }
+    })();
+  </script>
+</body>
+</html>

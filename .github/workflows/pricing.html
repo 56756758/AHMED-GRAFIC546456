@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AHMED DESIGN - قائمة الأسعار وحاسبة التكلفة | Pricing</title>
+  <meta name="description" content="قائمة أسعار خدمات AHMED DESIGN وحاسبة تقدير التكلفة الفورية. اختر بين الجنيه المصري والدولار الأمريكي واطلب تصميمك فوراً.">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AHMED DESIGN - قائمة الأسعار والباقات">
+  <meta property="og:description" content="أسعار تصميم الجرافيك بالجنيه المصري والدولار - خدمات AHMED DESIGN الاحترافية.">
+  <meta property="og:image" content="profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AHMED DESIGN - الأسعار">
+  <meta name="twitter:image" content="profile.jpg">
+
+  <!-- Security Meta Tags -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: blob:; img-src 'self' data: https: blob:; style-src 'self' 'unsafe-inline' https:; font-src 'self' https: data:;">
+
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon with Circular Profile Image -->
+  <link rel="icon" type="image/jpeg" href="profile.jpg">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ✨ Loading Screen -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="loading-inner">
+      <div class="loading-logo">
+        <img src="profile.jpg" alt="AHMED DESIGN" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 3px solid var(--color-primary); box-shadow: 0 0 20px rgba(99, 102, 241, 0.6);">
+      </div>
+      <div class="loading-ring"></div>
+      <p class="loading-text">AHMED DESIGN</p>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header-nav" id="header-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="nav-logo">
+        <img src="profile.jpg" alt="AHMED DESIGN" class="logo-avatar">
+        <span>AHMED DESIGN</span>
+      </a>
+      
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="القائمة">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+        <li><a href="services.html" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+        <li><a href="portfolio.html" data-ar="معرض الأعمال" data-en="Portfolio">معرض الأعمال</a></li>
+        <li><a href="pricing.html" data-ar="الأسعار" data-en="Pricing">الأسعار</a></li>
+        <li><a href="about.html" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+        <li><a href="contact.html" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+      </ul>
+      
+      <div class="nav-controls">
+        <!-- Social Media Buttons -->
+        <a href="https://www.instagram.com/ahme_idet_x" target="_blank" rel="noopener noreferrer" class="social-icon-btn instagram" title="الانستجرام - Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@narota28" target="_blank" rel="noopener noreferrer" class="social-icon-btn tiktok" title="التيك توك - TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <button class="theme-toggle-btn" id="theme-toggle-btn" title="تغيير الوضع">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="lang-toggle-btn" id="lang-toggle-btn" title="Switch Language">
+          <i class="fa-solid fa-globe"></i> <span id="lang-text">EN</span>
+        </button>
+        <button class="btn btn-secondary btn-sm" id="open-quick-modal-btn">
+          <i class="fa-solid fa-bolt"></i> <span data-ar="طلب سريع" data-en="Quick Order">طلب سريع</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Pricing & Cost Calculator Section -->
+  <section class="services-section" style="padding-top: 140px;">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle" data-ar="أسعار مناسبة لجميع المشاريع" data-en="Affordable Rates">أسعار مناسبة لجميع المشاريع</span>
+        <h2 class="section-title" data-ar="قائمة أسعار الخدمات" data-en="Service Pricing List">قائمة أسعار الخدمات</h2>
+        <p class="section-desc" data-ar="أسعار تنافسية وجودة عالمية. اختر العملة المناسبة لك للاستعراض." data-en="Transparent competitive pricing with top quality. Switch currency to view rates.">
+          أسعار تنافسية وجودة عالمية. اختر العملة المناسبة لك للاستعراض.
+        </p>
+        
+        <!-- Currency Toggle Switcher -->
+        <div class="currency-toggle-wrapper">
+          <span class="currency-label" data-ar="العملة:" data-en="Currency:">العملة:</span>
+          <div class="currency-switch-btns">
+            <button class="curr-btn active" data-curr="egp">ج.م (EGP)</button>
+            <button class="curr-btn" data-curr="usd">$ (USD)</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing Cards Grid -->
+      <div class="pricing-grid reveal">
+        <!-- Price Card 1: Thumbnail -->
+        <div class="glass-card pricing-card">
+          <div class="pricing-header">
+            <h3 data-ar="صورة مصغرة" data-en="YouTube Thumbnail">صورة مصغرة</h3>
+            <p data-ar="للفيديوهات والقنوات" data-en="For Videos & Channels">للفيديوهات والقنوات</p>
+          </div>
+          <div class="pricing-amount">
+            <span class="price-val" data-egp="100" data-usd="2.00">100</span>
+            <span class="price-unit" data-egp="ج.م" data-usd="$">ج.م</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> <span data-ar="تصميم عالي النقر (High CTR)" data-en="High-CTR Design">تصميم عالي النقر (High CTR)</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-ar="دقة فول HD 1080p" data-en="Full HD 1080p Resolution">دقة فول HD 1080p</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-ar="تعديلات مجانية متكررة" data-en="Free Revisions">تعديلات مجانية متكررة</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-ar="تسليم سريع خلال 24 ساعة" data-en="Fast 24h Delivery">تسليم سريع خلال 24 ساعة</span></li>
+          </ul>
+          <button class="btn btn-primary btn-block quick-order-trigger" data-service="صورة مصغرة" data-egp="100" data-usd="2.00" data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</button>
+        </div>
+
+        <!-- Price Card 2: Ad / Post -->
+        <div class="glass-card pricing-card">
+          <div class="pricing-header">
+            <h3 data-ar="بوست / إعلان" data-en="Ad & Post Design">بوست / إعلان</h3>
+            <p data-ar="للسوشيال ميديا والحملات" data-en="For Social Campaigns">للسوشيال ميديا والحملات</p>
+          </div>
+          <div class="pricing-amount">
+            <span class="price-val" data-egp="100" data-usd="2.00">100</span>
+            <span class="price-unit" data-egp="ج.م" data-usd="$">ج.م</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> <span data-ar="مقاسات منسقة لكل المنصات" data-en="Optimized Sizes">مقاسات منسقة لكل المنصات</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-ar="ألوان محفزة للشراء والنقر" data-en="High Conversion Colors">ألوان محفزة للشراء والنقر</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-ar="صيغ PNG / JPG فائقة الوضوح" data-en="Ultra HD PNG / JPG">صيغ PNG / JPG فائقة الوضوح</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-ar="تسليم خلال 24 - 48 ساعة" data-en="Fast Turnaround">تسليم خلال 24 - 48 ساعة</span></li>
+          </ul>
+          <button class="btn btn-primary btn-block quick-order-trigger" data-service="بوست / إعلان" data-egp="100" data-usd="2.00" data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</button>
+        </div>
+
+        <!-- Price Card 3: Logo -->
+        <div class="glass-card pricing-card popular">
+          <div class="popular-badge" data-ar="الأكثر طلباً" data-en="Most Popular">الأكثر طلباً</div>
+          <div class="pricing-header">
+            <h3 data-ar="تصميم شعار (لوجو)" data-en="Logo Design">تصميم شعارات (لوجو)</h3>
+            <p data-ar="هوية العلامة التجارية" data-en="Brand Identity Mark">هوية العلامة التجارية</p>
+          </div>
+          <div class="pricing-amount">
+            <span class="price-val" data-egp="100" data-usd="2.00">100</span>
+            <span class="price-unit" data-egp="ج.م" data-usd="$">ج.م</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> <span data-ar="فكرة مبتكرة وغير مكررة" data-en="Unique Original Concept">فكرة مبتكرة وغير مكررة</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-ar="ملفات Vector قابلة للطباعة" data-en="Print-Ready Vector Files">ملفات Vector قابلة للطباعة</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-ar="خلفية شفافة PNG + ملحق PSD" data-en="Transparent PNG + PSD">خلفية شفافة PNG + ملحق PSD</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-ar="تعديلات مجانية حتى الرضا" data-en="Unlimited Revisions">تعديلات مجانية حتى الرضا</span></li>
+          </ul>
+          <button class="btn btn-primary btn-block quick-order-trigger" data-service="تصميم شعار (لوجو)" data-egp="100" data-usd="2.00" data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</button>
+        </div>
+
+        <!-- Price Card 4: Commercial Designs -->
+        <div class="glass-card pricing-card">
+          <div class="pricing-header">
+            <h3 data-ar="تصميمات تجارية" data-en="Commercial Designs">تصميمات تجارية</h3>
+            <p data-ar="للمتاجر والشركات" data-en="For Stores & Businesses">للمتاجر والشركات</p>
+          </div>
+          <div class="pricing-amount">
+            <span class="price-val" data-egp="150" data-usd="2.50">150</span>
+            <span class="price-unit" data-egp="ج.م" data-usd="$">ج.م</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> <span data-ar="تصاميم مخصصة للمتاجر والمنتجات" data-en="Product & E-Com Graphics">تصاميم مخصصة للمتاجر والمنتجات</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-ar="إبراز تفاصيل المنتج باحترافية" data-en="Product Focus & Highlights">إبراز تفاصيل المنتج باحترافية</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-ar="تسليم ملفات عالية الجودة" data-en="High-Res Asset Export">تسليم ملفات عالية الجودة</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-ar="دعم واستشارات مجانية" data-en="Design Consultation">دعم واستشارات مجانية</span></li>
+          </ul>
+          <button class="btn btn-primary btn-block quick-order-trigger" data-service="تصميمات تجارية" data-egp="150" data-usd="2.50" data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</button>
+        </div>
+
+        <!-- Price Card 5: Large Custom Designs -->
+        <div class="glass-card pricing-card">
+          <div class="pricing-header">
+            <h3 data-ar="تصميمات خاصة كبيرة" data-en="Large Custom Designs">تصميمات خاصة كبيرة</h3>
+            <p data-ar="المشاريع الكبيرة والبوسترات" data-en="Large Projects & Posters">المشاريع الكبيرة والبوسترات</p>
+          </div>
+          <div class="pricing-amount">
+            <span class="price-val" data-egp="300" data-usd="3.00">300</span>
+            <span class="price-unit" data-egp="ج.م" data-usd="$">ج.م</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> <span data-ar="تصاميم معقدة وبوسترات ضخمة" data-en="Complex Posters & Visuals">تصاميم معقدة وبوسترات ضخمة</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-ar="دقة فائقة وأبعاد مخصصة" data-en="Bespoke Custom Dimensions">دقة فائقة وأبعاد مخصصة</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-ar="تسليم كافة الملفات المفتوحة PSD" data-en="Full Source PSD Delivery">تسليم كافة الملفات المفتوحة PSD</span></li>
+            <li><i class="fa-solid fa-check"></i> <span data-ar="أولوية فائقة في التنفيذ" data-en="Top Priority Execution">أولوية فائقة في التنفيذ</span></li>
+          </ul>
+          <button class="btn btn-primary btn-block quick-order-trigger" data-service="تصميمات خاصة كبيرة" data-egp="300" data-usd="3.00" data-ar="اطلب الآن" data-en="Order Now">اطلب الآن</button>
+        </div>
+      </div>
+
+      <!-- Interactive Cost Estimator Calculator Widget -->
+      <div class="calculator-card glass-card reveal" style="margin-top: 60px;">
+        <div class="calc-header">
+          <i class="fa-solid fa-calculator calc-icon"></i>
+          <div>
+            <h3 data-ar="حاسبة تقدير التكلفة الفورية" data-en="Instant Order Cost Estimator">حاسبة تقدير التكلفة الفورية</h3>
+            <p data-ar="احسب تكلفة طلبك التقديرية بناءً على العدد ونوع التصميم واطلبه فوراً" data-en="Calculate your estimated order cost based on quantity and design type.">
+              احسب تكلفة طلبك التقديرية بناءً على العدد ونوع التصميم واطلبه فوراً
+            </p>
+          </div>
+        </div>
+
+        <div class="calc-body-grid">
+          <div class="calc-group">
+            <label data-ar="اختر نوع الخدمة:" data-en="Select Service Type:">اختر نوع الخدمة:</label>
+            <select id="calc-service" class="form-control">
+              <option value="100|2.00|صورة مصغرة">صورة مصغرة (100 ج.م / $2.00)</option>
+              <option value="100|2.00|بوست / إعلان">بوست / إعلان (100 ج.م / $2.00)</option>
+              <option value="100|2.00|تصميم شعار (لوجو)">تصميم شعار (لوجو) (100 ج.م / $2.00)</option>
+              <option value="150|2.50|تصميمات تجارية">تصميمات تجارية (150 ج.م / $2.50)</option>
+              <option value="300|3.00|تصميمات خاصة كبيرة">تصميمات خاصة كبيرة (300 ج.م / $3.00)</option>
+            </select>
+          </div>
+
+          <div class="calc-group">
+            <label data-ar="عدد التصاميم المطلوبة:" data-en="Number of Designs:">عدد التصاميم المطلوبة:</label>
+            <input type="number" id="calc-qty" class="form-control" value="1" min="1" max="50">
+          </div>
+
+          <div class="calc-result-box">
+            <span class="calc-result-title" data-ar="التكلفة الإجمالية المقدرة:" data-en="Estimated Total:">التكلفة الإجمالية المقدرة:</span>
+            <div class="calc-total-display">
+              <span id="calc-total-val">100</span>
+              <span id="calc-total-unit">ج.م</span>
+            </div>
+            <button class="btn btn-primary" id="calc-submit-btn">
+              <i class="fa-brands fa-whatsapp"></i> <span data-ar="إرسال الطلب عبر الواتساب" data-en="Send Order via WhatsApp">إرسال الطلب عبر الواتساب</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payment Methods Banner -->
+      <div class="glass-card reveal" style="margin-top: 50px; padding: 30px; text-align: center;">
+        <h4 style="margin-bottom: 15px;" data-ar="💳 طرق الدفع المتاحة" data-en="💳 Available Payment Methods">💳 طرق الدفع المتاحة</h4>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; max-width: 700px; margin: 0 auto;" data-ar="فودافون كاش (Vodafone Cash) أو InstaPay من داخل مصر | PayPal والتحويلات البنكية للمشتركين عالمياً." data-en="Vodafone Cash & InstaPay in Egypt | PayPal & Wire Transfers internationally.">
+          فودافون كاش (Vodafone Cash) أو InstaPay من داخل مصر | PayPal والتحويلات البنكية للمشتركين عالمياً.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <a href="index.html" class="footer-logo">
+        <img src="profile.jpg" alt="AHMED DESIGN" class="logo-avatar" style="width: 32px; height: 32px;">
+        <span>AHMED DESIGN</span>
+      </a>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <a href="https://www.instagram.com/ahme_idet_x" target="_blank" rel="noopener noreferrer" class="social-icon-btn instagram" title="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@narota28" target="_blank" rel="noopener noreferrer" class="social-icon-btn tiktok" title="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2026 AHMED DESIGN. All rights reserved. خدمات تصميم الجرافيك الاحترافية.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Quick Request Modal Popup -->
+  <div class="modal-backdrop" id="quick-order-modal">
+    <div class="modal-card quick-modal-card">
+      <button class="modal-close" id="quick-modal-close" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+      <div class="quick-modal-header">
+        <i class="fa-solid fa-bolt modal-icon"></i>
+        <h3 data-ar="طلب تصميم سريع عبر الواتساب" data-en="Quick WhatsApp Order">طلب تصميم سريع عبر الواتساب</h3>
+      </div>
+      <form id="quick-order-form" autocomplete="off">
+        <div class="form-group">
+          <label data-ar="اسمك الكريم:" data-en="Your Name:">اسمك الكريم:</label>
+          <input type="text" id="modal-client-name" class="form-control" placeholder="مثال: أحمد" required maxlength="100">
+        </div>
+        <div class="form-group">
+          <label data-ar="نوع التصميم المطلوب:" data-en="Select Design:">نوع التصميم المطلوب:</label>
+          <select id="modal-service-select" class="form-control" required>
+            <option value="صورة مصغرة">صورة مصغرة (100 ج.م / $2.00)</option>
+            <option value="بوست / إعلان">بوست / إعلان (100 ج.م / $2.00)</option>
+            <option value="تصميم شعار (لوجو)">تصميم شعار - لوجو (100 ج.م / $2.00)</option>
+            <option value="تصميمات تجارية">تصميمات تجارية (150 ج.م / $2.50)</option>
+            <option value="تصميمات خاصة كبيرة">تصميمات خاصة كبيرة (300 ج.م / $3.00)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-ar="ملاحظات وفكرة التصميم:" data-en="Design Notes:">ملاحظات وفكرة التصميم:</label>
+          <textarea id="modal-notes" class="form-control" placeholder="اكتب عنوان التصميم أو الملاحظات البسيطة..." required maxlength="500"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <i class="fa-brands fa-whatsapp"></i> <span data-ar="تأكيد والفتح في الواتساب" data-en="Confirm & Open WhatsApp">تأكيد والفتح في الواتساب</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://wa.me/201289337306?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A8%D9%83%D8%8C%20%D8%B3%D9%8A%D8%AA%D9%85%20%D8%A7%D9%84%D8%B1%D8%AF%20%D8%B9%D9%84%D9%8A%D9%83%20%D9%81%D9%8A%20%D8%A3%D9%82%D8%B1%D8%A8%20%D9%88%D9%82%D8%AA" 
+     class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Contact via WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scroll To Top Button -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="العودة لأعلى">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="app.js"></script>
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      var ls = document.getElementById('loading-screen');
+      if (!ls) return;
+      function hide() { ls.classList.add('hidden'); }
+      setTimeout(hide, 800);
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        setTimeout(hide, 300);
+      } else {
+        document.addEventListener('DOMContentLoaded', function () { setTimeout(hide, 300); });
+      }
+    })();
+  </script>
+</body>
+</html>
