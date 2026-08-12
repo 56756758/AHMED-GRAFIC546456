@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AHMED DESIGN - معرض الأعمال والنماذج الحقيقية | Portfolio</title>
+  <meta name="description" content="معرض أعمال AHMED DESIGN - استعرض أحدث النماذج والتصاميم الحقيقية لغلاف اليوتيوب، الإعلانات التجارية، والستوريات مع مقارنة CTR.">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AHMED DESIGN - معرض الأعمال الاحترافية">
+  <meta property="og:description" content="معرض أعمال AHMED DESIGN - تصاميم حقيقية متميزة من غلاف يوتيوب وإعلانات تجارية.">
+  <meta property="og:image" content="profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AHMED DESIGN - معرض الأعمال">
+  <meta name="twitter:image" content="profile.jpg">
+
+  <!-- Security Meta Tags -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: blob:; img-src 'self' data: https: blob:; style-src 'self' 'unsafe-inline' https:; font-src 'self' https: data:;">
+
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon with Circular Profile Image -->
+  <link rel="icon" type="image/jpeg" href="profile.jpg">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ✨ Loading Screen -->
+  <div class="loading-screen" id="loading-screen">
+    <div class="loading-inner">
+      <div class="loading-logo">
+        <img src="profile.jpg" alt="AHMED DESIGN" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 3px solid var(--color-primary); box-shadow: 0 0 20px rgba(99, 102, 241, 0.6);">
+      </div>
+      <div class="loading-ring"></div>
+      <p class="loading-text">AHMED DESIGN</p>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header-nav" id="header-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" id="nav-logo">
+        <img src="profile.jpg" alt="AHMED DESIGN" class="logo-avatar">
+        <span>AHMED DESIGN</span>
+      </a>
+      
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="القائمة">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+        <li><a href="services.html" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+        <li><a href="portfolio.html" data-ar="معرض الأعمال" data-en="Portfolio">معرض الأعمال</a></li>
+        <li><a href="pricing.html" data-ar="الأسعار" data-en="Pricing">الأسعار</a></li>
+        <li><a href="about.html" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+        <li><a href="contact.html" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+      </ul>
+      
+      <div class="nav-controls">
+        <!-- Social Media Buttons -->
+        <a href="https://www.instagram.com/ahme_idet_x" target="_blank" rel="noopener noreferrer" class="social-icon-btn instagram" title="الانستجرام - Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@narota28" target="_blank" rel="noopener noreferrer" class="social-icon-btn tiktok" title="التيك توك - TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <button class="theme-toggle-btn" id="theme-toggle-btn" title="تغيير الوضع">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <button class="lang-toggle-btn" id="lang-toggle-btn" title="Switch Language">
+          <i class="fa-solid fa-globe"></i> <span id="lang-text">EN</span>
+        </button>
+        <button class="btn btn-secondary btn-sm" id="open-quick-modal-btn">
+          <i class="fa-solid fa-bolt"></i> <span data-ar="طلب سريع" data-en="Quick Order">طلب سريع</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Interactive Portfolio Gallery Section -->
+  <section class="services-section" style="padding-top: 140px;">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-subtitle" data-ar="معرض أحدث الأعمال" data-en="Portfolio Showcase">معرض أحدث الأعمال</span>
+        <h2 class="section-title" data-ar="نماذج أعمال AHMED DESIGN" data-en="AHMED DESIGN Portfolio">نماذج أعمال AHMED DESIGN</h2>
+        <p class="section-desc" data-ar="تصفح النماذج الحقيقية المتميزة من تصاميم المنتجات التجارية، وغلاف اليوتيوب، وبنرات الإعلانات." data-en="Explore real creative design models across product ads, YouTube thumbnails, and social banners.">
+          تصفح النماذج الحقيقية المتميزة من تصاميم المنتجات التجارية، وغلاف اليوتيوب، وبنرات الإعلانات.
+        </p>
+      </div>
+
+      <!-- Portfolio Category Filter Tabs -->
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all" data-ar="الكل" data-en="All">الكل</button>
+        <button class="filter-btn" data-filter="thumbnails" data-ar="صور مصغرة" data-en="Thumbnails">صور مصغرة</button>
+        <button class="filter-btn" data-filter="commercial" data-ar="تصميمات تجارية" data-en="Commercial Ads">تصميمات تجارية</button>
+        <button class="filter-btn" data-filter="ads" data-ar="إعلانات وبوستات" data-en="Ads & Posts">إعلانات وبوستات</button>
+        <button class="filter-btn" data-filter="custom" data-ar="تصميمات خاصة" data-en="Custom Designs">تصميمات خاصة</button>
+      </div>
+
+      <!-- Portfolio Items Grid with Real Uploaded Images -->
+      <div class="portfolio-grid reveal">
+        <!-- Item 1: YouTube Thumbnail ("فخ الذكاء") -->
+        <div class="glass-card portfolio-item" data-category="thumbnails">
+          <div class="portfolio-thumb-box">
+            <img src="portfolio-3.jpg" alt="غلاف يوتيوب - فخ الذكاء" class="portfolio-real-img">
+            <span class="portfolio-tag">YouTube Thumbnail</span>
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm lightbox-btn" data-img="portfolio-3.jpg" data-title="غلاف يوتيوب احترافي - فخ الذكاء" data-desc="تصميم غلاف يوتيوب عالي النقر (High CTR) بلمسة سينمائية، تايبوجرافي زجاجي ثلاثي الأبعاد وإضاءة محترفة.">
+                <i class="fa-solid fa-expand"></i> <span data-ar="تكبير التصميم" data-en="Preview">تكبير التصميم</span>
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4 data-ar="غلاف يوتيوب - فخ الذكاء" data-en="Chess YouTube Thumbnail">غلاف يوتيوب - فخ الذكاء</h4>
+            <p data-ar="زيادة نسبة النقر (CTR +18.5%)" data-en="CTR Boost (+18.5%)">زيادة نسبة النقر (CTR +18.5%)</p>
+          </div>
+        </div>
+
+        <!-- Item 2: Commercial Product Design (Al Ain Milk) -->
+        <div class="glass-card portfolio-item" data-category="commercial">
+          <div class="portfolio-thumb-box">
+            <img src="portfolio-1.jpg" alt="تصميم تجاري - حليب العين الطازج" class="portfolio-real-img">
+            <span class="portfolio-tag">Commercial Ad</span>
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm lightbox-btn" data-img="portfolio-1.jpg" data-title="إعلان تجاري - حليب العين الطازج" data-desc="بوستر إعلاني تجاري متكامل للمنتجات، استخدام دمج احترافي، ظلال ناعمة وإبراز مميزات المنتج.">
+                <i class="fa-solid fa-expand"></i> <span data-ar="تكبير التصميم" data-en="Preview">تكبير التصميم</span>
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4 data-ar="إعلان تجاري - حليب العين" data-en="Al Ain Commercial Campaign">إعلان تجاري - حليب العين</h4>
+            <p data-ar="تصميم إعلاني للمنتجات الغذائية" data-en="Food & Beverage Commercial">تصميم إعلاني للمنتجات الغذائية</p>
+          </div>
+        </div>
+
+        <!-- Item 3: Custom Product Visual (Cadbury Dairy Milk) -->
+        <div class="glass-card portfolio-item" data-category="custom">
+          <div class="portfolio-thumb-box">
+            <img src="portfolio-2.jpg" alt="تصميم منتج خاص - كادبوري ديري ميلك" class="portfolio-real-img">
+            <span class="portfolio-tag">Custom Product Visual</span>
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm lightbox-btn" data-img="portfolio-2.jpg" data-title="تصميم خاص - Cadbury Dairy Milk" data-desc="بوستر دعاية خاص لمنتج كادبوري ديري ميلك بالبندق، تأثيرات الحليب والشوكولاتة المتدفقة بخلفية نيون فخمة.">
+                <i class="fa-solid fa-expand"></i> <span data-ar="تكبير التصميم" data-en="Preview">تكبير التصميم</span>
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4 data-ar="دعاية منتج - Cadbury Dairy Milk" data-en="Cadbury Product Visual">دعاية منتج - Cadbury Dairy Milk</h4>
+            <p data-ar="دمج ثري دي وتأثيرات سائلة" data-en="3D Fluid Manipulation & Lighting">دمج ثري دي وتأثيرات سائلة</p>
+          </div>
+        </div>
+
+        <!-- Item 5: Logo Design -->
+        <div class="glass-card portfolio-item" data-category="commercial">
+          <div class="portfolio-thumb-box">
+            <img src="portfolio-5.jpg" alt="تصميم شعار عربي - لوجو احترافي" class="portfolio-real-img">
+            <span class="portfolio-tag">Logo Design</span>
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm lightbox-btn" data-img="portfolio-5.jpg" data-title="تصميم شعار - الرُقِي" data-desc="تصميم شعار عربي فاخر بتأثيرات نيون وجلد ذهبي، تصميم هوية بصرية احترافية مميزة.">
+                <i class="fa-solid fa-expand"></i> <span data-ar="تكبير التصميم" data-en="Preview">تكبير التصميم</span>
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4 data-ar="تصميم شعار - الرُقِي" data-en="Al-Ruqi Arabic Logo Design">تصميم شعار - الرُقِي</h4>
+            <p data-ar="هوية بصرية وتايبوجرافي عربي فاخر" data-en="Premium Arabic Brand Identity">هوية بصرية وتايبوجرافي عربي فاخر</p>
+          </div>
+        </div>
+
+        <!-- Item 4: Social Media Ads & Stories Showcase -->
+        <div class="glass-card portfolio-item" data-category="ads">
+          <div class="portfolio-thumb-box">
+            <img src="portfolio-4.jpg" alt="تصاميم بوستات واستوري سوشيال ميديا" class="portfolio-real-img">
+            <span class="portfolio-tag">Social Media Ads</span>
+            <div class="portfolio-overlay">
+              <button class="btn btn-primary btn-sm lightbox-btn" data-img="portfolio-4.jpg" data-title="تصاميم بوستات واستوريات ممودة" data-desc="نماذج إعلانات وبوستات السوشيال ميديا المحفزة للشراء والتفاعل على فيسبوك وانستجرام.">
+                <i class="fa-solid fa-expand"></i> <span data-ar="تكبير التصميم" data-en="Preview">تكبير التصميم</span>
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <h4 data-ar="بنرات وحملات السوشيال ميديا" data-en="Social Media Campaign Ads">بنرات وحملات السوشيال ميديا</h4>
+            <p data-ar="بوستات تسويقية محفزة للشراء" data-en="High-Conversion Marketing Banner">بوستات تسويقية محفزة للشراء</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Before / After Thumbnail Comparison Showcase -->
+      <div class="before-after-wrapper reveal" style="margin-top: 80px;">
+        <h3 class="before-after-title" data-ar="🔥 قوة غلاف اليوتيوب الاحترافي (مقارنة CTR)" data-en="🔥 Power of High-CTR Thumbnails">🔥 قوة غلاف اليوتيوب الاحترافي (مقارنة CTR)</h3>
+        <p class="before-after-sub" data-ar="اسحب الشريط لرؤية الفرق بين الغلاف العادي والغلاف المصمم باحترافية وتأثيره على المشاهدات" data-en="Drag the slider to compare standard thumbnails vs high-CTR professional design">
+          اسحب الشريط لرؤية الفرق بين الغلاف العادي والغلاف المصمم باحترافية وتأثيره على المشاهدات
+        </p>
+        
+        <div class="ba-slider-container" id="ba-slider">
+          <div class="ba-image ba-after">
+            <img src="portfolio-3.jpg" alt="بعد التصميم الاحترافي" style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="ba-overlay-label success">
+              <span class="ba-badge success"><i class="fa-solid fa-arrow-trend-up"></i> CTR 18.5% (بعد تصميم AHMED DESIGN)</span>
+            </div>
+          </div>
+          <div class="ba-image ba-before">
+            <div class="ba-demo-card before-card">
+              <span class="ba-badge muted">CTR 2.1% (قبل)</span>
+              <h4>فيديو عادي بدون تصميم احترافي</h4>
+            </div>
+          </div>
+          <div class="ba-handle" id="ba-handle">
+            <i class="fa-solid fa-arrows-left-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <a href="index.html" class="footer-logo">
+        <img src="profile.jpg" alt="AHMED DESIGN" class="logo-avatar" style="width: 32px; height: 32px;">
+        <span>AHMED DESIGN</span>
+      </a>
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <a href="https://www.instagram.com/ahme_idet_x" target="_blank" rel="noopener noreferrer" class="social-icon-btn instagram" title="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@narota28" target="_blank" rel="noopener noreferrer" class="social-icon-btn tiktok" title="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </div>
+      <p class="footer-copyright">
+        &copy; 2026 AHMED DESIGN. All rights reserved. خدمات تصميم الجرافيك الاحترافية.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Preview Modal -->
+  <div class="modal-backdrop" id="lightbox-modal">
+    <div class="modal-card lightbox-card">
+      <button class="modal-close" id="lightbox-close" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+      <div class="lightbox-img-box" id="lightbox-img-container">
+        <img src="" id="lightbox-img" alt="معاينة التصميم" style="width: 100%; max-height: 400px; object-fit: contain; border-radius: 8px;">
+      </div>
+      <div class="lightbox-details">
+        <h3 id="lightbox-title">عنوان التصميم</h3>
+        <p id="lightbox-desc">وصف وتفاصيل التصميم</p>
+        <button class="btn btn-primary btn-sm quick-order-trigger" id="lightbox-order-btn" data-ar="طلب تصميم مشابه" data-en="Order Similar Design">طلب تصميم مشابه</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Request Modal Popup -->
+  <div class="modal-backdrop" id="quick-order-modal">
+    <div class="modal-card quick-modal-card">
+      <button class="modal-close" id="quick-modal-close" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+      <div class="quick-modal-header">
+        <i class="fa-solid fa-bolt modal-icon"></i>
+        <h3 data-ar="طلب تصميم سريع عبر الواتساب" data-en="Quick WhatsApp Order">طلب تصميم سريع عبر الواتساب</h3>
+      </div>
+      <form id="quick-order-form" autocomplete="off">
+        <div class="form-group">
+          <label data-ar="اسمك الكريم:" data-en="Your Name:">اسمك الكريم:</label>
+          <input type="text" id="modal-client-name" class="form-control" placeholder="مثال: أحمد" required maxlength="100">
+        </div>
+        <div class="form-group">
+          <label data-ar="نوع التصميم المطلوب:" data-en="Select Design:">نوع التصميم المطلوب:</label>
+          <select id="modal-service-select" class="form-control" required>
+            <option value="صورة مصغرة">صورة مصغرة (100 ج.م / $2.00)</option>
+            <option value="بوست / إعلان">بوست / إعلان (100 ج.م / $2.00)</option>
+            <option value="تصميم شعار (لوجو)">تصميم شعار - لوجو (100 ج.م / $2.00)</option>
+            <option value="تصميمات تجارية">تصميمات تجارية (150 ج.م / $2.50)</option>
+            <option value="تصميمات خاصة كبيرة">تصميمات خاصة كبيرة (300 ج.م / $3.00)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-ar="ملاحظات وفكرة التصميم:" data-en="Design Notes:">ملاحظات وفكرة التصميم:</label>
+          <textarea id="modal-notes" class="form-control" placeholder="اكتب عنوان التصميم أو الملاحظات البسيطة..." required maxlength="500"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <i class="fa-brands fa-whatsapp"></i> <span data-ar="تأكيد والفتح في الواتساب" data-en="Confirm & Open WhatsApp">تأكيد والفتح في الواتساب</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://wa.me/201289337306?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A8%D9%83%D8%8C%20%D8%B3%D9%8A%D8%AA%D9%85%20%D8%A7%D9%84%D8%B1%D8%AF%20%D8%B9%D9%84%D9%8A%D9%83%20%D9%81%D9%8A%20%D8%A3%D9%82%D8%B1%D8%A8%20%D9%88%D9%82%D8%AA" 
+     class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Contact via WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://wa.me/201289337306?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A8%D9%83%D8%8C%20%D8%B3%D9%8A%D8%AA%D9%85%20%D8%A7%D9%84%D8%B1%D8%AF%20%D8%B9%D9%84%D9%8A%D9%83%20%D9%81%D9%8A%20%D8%A3%D9%82%D8%B1%D8%A8%20%D9%88%D9%82%D8%AA"
+     class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Contact via WhatsApp" title="تواصل معنا عبر واتساب">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scroll To Top Button -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="العودة لأعلى" title="العودة لأعلى">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Sticky Mobile WhatsApp Bar -->
+  <div class="mobile-wa-bar" id="mobile-wa-bar">
+    <a href="https://wa.me/201289337306?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%A8%D9%83%D8%8C%20%D8%B3%D9%8A%D8%AA%D9%85%20%D8%A7%D9%84%D8%B1%D8%AF%20%D8%B9%D9%84%D9%8A%D9%83%20%D9%81%D9%8A%20%D8%A3%D9%82%D8%B1%D8%A8%20%D9%88%D9%82%D8%AA"
+       target="_blank" rel="noopener noreferrer" class="mobile-wa-link">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span data-ar="تواصل عبر واتساب" data-en="Chat on WhatsApp">تواصل عبر واتساب</span>
+    </a>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      var ls = document.getElementById('loading-screen');
+      if (!ls) return;
+      function hide() { ls.classList.add('hidden'); }
+      setTimeout(hide, 800);
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        setTimeout(hide, 300);
+      } else {
+        document.addEventListener('DOMContentLoaded', function () { setTimeout(hide, 300); });
+      }
+    })();
+  </script>
+</body>
+</html>

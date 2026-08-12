@@ -237,6 +237,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (submitBtn) { submitBtn.style.display = 'none'; }
             successAlert.style.display = 'flex';
             requestForm.reset();
+            showToast('success', 'fa-circle-check', 'تم استلام طلبك بنجاح! سنتواصل معك قريباً');
           } else {
             requestForm.submit();
           }
@@ -247,4 +248,70 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
+
+  // ─────────────────────────────────────────
+  // 6. Loading Screen — hide fast
+  // ─────────────────────────────────────────
+  var loadingScreen = document.getElementById('loading-screen');
+  if (loadingScreen) {
+    setTimeout(function () {
+      loadingScreen.classList.add('hidden');
+    }, 900);
+  }
+
+  // ─────────────────────────────────────────
+  // 7. Scroll To Top Button
+  // ─────────────────────────────────────────
+  var scrollTopBtn = document.getElementById('scroll-top-btn');
+  if (scrollTopBtn) {
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 400) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+    scrollTopBtn.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // ─────────────────────────────────────────
+  // 8. Toast Notification System
+  // ─────────────────────────────────────────
+  window.showToast = function (type, icon, message, duration) {
+    var container = document.getElementById('toast-container');
+    if (!container) return;
+
+    duration = duration || 3500;
+    var toast = document.createElement('div');
+    toast.className = 'toast toast-' + type;
+    toast.innerHTML = '<i class="fa-solid ' + icon + '"></i><span>' + message + '</span>';
+    container.appendChild(toast);
+
+    setTimeout(function () {
+      toast.classList.add('removing');
+      setTimeout(function () {
+        if (toast.parentNode) toast.parentNode.removeChild(toast);
+      }, 350);
+    }, duration);
+  };
+
+  // ─────────────────────────────────────────
+  // 9. Lazy Loading for Portfolio Images
+  // ─────────────────────────────────────────
+  var lazyImages = document.querySelectorAll('img');
+  lazyImages.forEach(function (img) {
+    if (!img.hasAttribute('loading')) {
+      img.setAttribute('loading', 'lazy');
+    }
+  });
+
+  // ─────────────────────────────────────────
+  // 10. Welcome Toast on first visit
+  // ─────────────────────────────────────────
+  setTimeout(function () {
+    showToast('info', 'fa-wand-magic-sparkles', 'مرحباً بك في AHMED DESIGN ✨');
+  }, 1200);
+
 });

@@ -60,10 +60,32 @@ document.addEventListener('DOMContentLoaded', () => {
   revealElements.forEach(el => revealObserver.observe(el));
 
   // --------------------------------------------------------------------------
-  // 4. Dark / Light Theme Toggle
+  // Active Navigation Link Highlighter
+  // --------------------------------------------------------------------------
+  const pathName = window.location.pathname;
+  let pageName = pathName.split('/').pop() || 'index.html';
+  if (pageName === '' || pageName === '/') pageName = 'index.html';
+
+  document.querySelectorAll('#nav-links a').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href && (href === pageName || (pageName === 'index.html' && (href === 'index.html' || href === '#home')))) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
+  });
+
+  // --------------------------------------------------------------------------
+  // 4. Dark / Light Theme Toggle & Persistence
   // --------------------------------------------------------------------------
   const themeToggleBtn = document.getElementById('theme-toggle-btn');
   const themeIcon = document.getElementById('theme-icon');
+  const savedTheme = localStorage.getItem('theme') || 'dark';
+
+  document.documentElement.setAttribute('data-theme', savedTheme);
+  if (themeIcon) {
+    themeIcon.className = savedTheme === 'light' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+  }
 
   if (themeToggleBtn && themeIcon) {
     themeToggleBtn.addEventListener('click', () => {
@@ -71,36 +93,44 @@ document.addEventListener('DOMContentLoaded', () => {
       const newTheme = currentTheme === 'light' ? 'dark' : 'light';
       
       document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
       themeIcon.className = newTheme === 'light' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
     });
   }
 
   // --------------------------------------------------------------------------
-  // 5. Language Switcher (Arabic <-> English)
+  // 5. Language Switcher (Arabic <-> English) & Persistence
   // --------------------------------------------------------------------------
   const langToggleBtn = document.getElementById('lang-toggle-btn');
   const langText = document.getElementById('lang-text');
-  let currentLang = 'ar';
+  let currentLang = localStorage.getItem('lang') || 'ar';
+
+  function applyLanguage(lang) {
+    currentLang = lang;
+    document.documentElement.setAttribute('lang', currentLang);
+    document.documentElement.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
+    if (langText) langText.textContent = currentLang === 'ar' ? 'EN' : 'عربي';
+
+    document.querySelectorAll('[data-ar]').forEach(el => {
+      const text = el.getAttribute(`data-${currentLang}`);
+      if (text) {
+        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+          el.placeholder = text;
+        } else {
+          el.textContent = text;
+        }
+      }
+    });
+  }
+
+  // Apply saved language immediately on load
+  applyLanguage(currentLang);
 
   if (langToggleBtn) {
     langToggleBtn.addEventListener('click', () => {
-      currentLang = currentLang === 'ar' ? 'en' : 'ar';
-      
-      document.documentElement.setAttribute('lang', currentLang);
-      document.documentElement.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
-      langText.textContent = currentLang === 'ar' ? 'EN' : 'عربي';
-
-      // Update all translatable elements
-      document.querySelectorAll('[data-ar]').forEach(el => {
-        const text = el.getAttribute(`data-${currentLang}`);
-        if (text) {
-          if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-            el.placeholder = text;
-          } else {
-            el.textContent = text;
-          }
-        }
-      });
+      const newLang = currentLang === 'ar' ? 'en' : 'ar';
+      localStorage.setItem('lang', newLang);
+      applyLanguage(newLang);
     });
   }
 
