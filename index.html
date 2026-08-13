@@ -415,11 +415,11 @@
             <label for="request-type" data-ar="نوع التصميم المطلوب" data-en="Design Request Type">نوع التصميم المطلوب</label>
             <select id="request-type" name="category" class="form-control" required>
               <option value="" disabled selected data-ar="اختر فئة التصميم..." data-en="Select a design category...">اختر فئة التصميم...</option>
-              <option value="صورة مصغرة">صورة مصغرة (100 ج.م / $2.00)</option>
-              <option value="بوست / إعلان">بوست / إعلان (100 ج.م / $2.00)</option>
-              <option value="تصميم شعار (لوجو)">تصميم شعار - لوجو (100 ج.م / $2.00)</option>
-              <option value="تصميمات تجارية">تصميمات تجارية (150 ج.م / $2.50)</option>
-              <option value="تصميمات خاصة كبيرة">تصميمات خاصة كبيرة (300 ج.م / $3.00)</option>
+              <option value="صورة مصغرة">صورة مصغرة (350 ج.م / $7.00)</option>
+              <option value="بوست / إعلان">بوست / إعلان (200 ج.م / $4.00)</option>
+              <option value="تصميم شعار (لوجو)">تصميم شعار - لوجو (150 ج.م / $3.00)</option>
+              <option value="تصميمات تجارية">تصميمات تجارية (250 ج.م / $5.00)</option>
+              <option value="تصميمات خاصة كبيرة">تصميمات خاصة كبيرة (450 ج.م / $9.00)</option>
             </select>
           </div>
           
@@ -431,6 +431,10 @@
           <button type="submit" class="btn btn-primary" id="form-submit-btn" style="align-self: flex-start;">
             <i class="fa-solid fa-paper-plane"></i> <span data-ar="إرسال طلب التصميم" data-en="Send Design Request">إرسال طلب التصميم</span>
           </button>
+          <div class="submit-alert" id="submit-success-alert">
+            <i class="fa-solid fa-circle-check"></i>
+            <span data-ar="تم استلام طلبك بنجاح! سيتم التواصل معك في أقرب وقت." data-en="Success! AHMED DESIGN has received your request and will reach out shortly.">تم استلام طلبك بنجاح! سيتم التواصل معك في أقرب وقت.</span>
+          </div>
         </form>
       </div>
     </div>
@@ -488,11 +492,11 @@
         <div class="form-group">
           <label data-ar="نوع التصميم المطلوب:" data-en="Select Design:">نوع التصميم المطلوب:</label>
           <select id="modal-service-select" class="form-control" required>
-            <option value="صورة مصغرة">صورة مصغرة (100 ج.م / $2.00)</option>
-            <option value="بوست / إعلان">بوست / إعلان (100 ج.م / $2.00)</option>
-            <option value="تصميم شعار (لوجو)">تصميم شعار - لوجو (100 ج.م / $2.00)</option>
-            <option value="تصميمات تجارية">تصميمات تجارية (150 ج.م / $2.50)</option>
-            <option value="تصميمات خاصة كبيرة">تصميمات خاصة كبيرة (300 ج.م / $3.00)</option>
+            <option value="صورة مصغرة">صورة مصغرة (350 ج.م / $7.00)</option>
+            <option value="بوست / إعلان">بوست / إعلان (200 ج.م / $4.00)</option>
+            <option value="تصميم شعار (لوجو)">تصميم شعار - لوجو (150 ج.م / $3.00)</option>
+            <option value="تصميمات تجارية">تصميمات تجارية (250 ج.م / $5.00)</option>
+            <option value="تصميمات خاصة كبيرة">تصميمات خاصة كبيرة (450 ج.م / $9.00)</option>
           </select>
         </div>
         <div class="form-group">

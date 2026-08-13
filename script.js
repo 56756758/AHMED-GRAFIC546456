@@ -202,28 +202,26 @@ document.addEventListener('DOMContentLoaded', function () {
   var successAlert = document.getElementById('submit-success-alert');
   var submitBtn    = document.getElementById('form-submit-btn');
 
-  if (requestForm && successAlert) {
+  if (requestForm) {
     requestForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
       if (submitBtn) {
         submitBtn.disabled = true;
         submitBtn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> جاري إرسال الطلب...';
       }
 
-      if (window.location.protocol === 'file:') {
-        return true;
-      } else {
-        e.preventDefault();
-
-        var formData = {
+      var formData = {
           "\u0627\u0644\u0627\u0633\u0645": document.getElementById('client-name').value,
           "\u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a": document.getElementById('client-email').value,
           "\u0646\u0648\u0639 \u0627\u0644\u062a\u0635\u0645\u064a\u0645": document.getElementById('request-type').value,
-          "\u0627\u0644\u0646\u0645\u0637 \u0648\u0627\u0644\u0623\u0644\u0648\u0627\u0646": document.getElementById('request-style').value,
+          "\u0627\u0644\u0646\u0645\u0637 \u0648\u0627\u0644\u0623\u0644\u0648\u0627\u0646": document.getElementById('request-style') ? document.getElementById('request-style').value : 'لم يُحدد',
           "\u062a\u0641\u0627\u0635\u064a\u0644 \u0627\u0644\u0637\u0644\u0628": document.getElementById('request-details').value,
-          "_subject": "\u0637\u0644\u0628 \u062a\u0635\u0645\u064a\u0645 \u062c\u062f\u064a\u062f - \u0645\u0648\u0642\u0639 Ahmed Design"
-        };
+          "_subject": "\u0637\u0644\u0628 \u062a\u0635\u0645\u064a\u0645 \u062c\u062f\u064a\u062f - \u0645\u0648\u0642\u0639 Ahmed Design",
+          "_template": "table"
+      };
 
-        fetch("https://formsubmit.co/ajax/am9495741@gmail.com", {
+      fetch("https://formsubmit.co/ajax/am9495741@gmail.com", {
           method: "POST",
           headers: {
             'Content-Type': 'application/json',
@@ -231,21 +229,27 @@ document.addEventListener('DOMContentLoaded', function () {
           },
           body: JSON.stringify(formData)
         })
-        .then(function (response) { return response.json(); })
+        .then(function (response) {
+          if (!response.ok) throw new Error('Form submission failed');
+          return response.json();
+        })
         .then(function (data) {
           if (data.success === "true" || data.success === true) {
             if (submitBtn) { submitBtn.style.display = 'none'; }
-            successAlert.style.display = 'flex';
+            if (successAlert) successAlert.style.display = 'flex';
             requestForm.reset();
             showToast('success', 'fa-circle-check', 'تم استلام طلبك بنجاح! سنتواصل معك قريباً');
           } else {
-            requestForm.submit();
+            throw new Error('Form service rejected submission');
           }
         })
         .catch(function () {
-          requestForm.submit();
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> إرسال طلب التصميم';
+          }
+          showToast('warning', 'fa-triangle-exclamation', 'تعذر الإرسال عبر البريد، حاول مرة أخرى أو تواصل عبر واتساب.');
         });
-      }
     });
   }
 
